@@ -1752,7 +1752,7 @@ return s
 end
 local f = load("files_KENAE/"..name_t[2]..".lua")
 if f ~= "keko" then
-if f:match("^(.*)(keko_KENAE)(.*)$") then
+if f:match("^(.*)(keko_KENAEe)(.*)$") then
 database:sadd("files"..bot_id,name_t[2]..'.lua')
 send(msg.chat_id_, msg.id_, 1, "✔┇تم تفعيل {"..name_t[2]..".lua}", 1, 'html')
 else
