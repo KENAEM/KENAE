@@ -1,8 +1,10 @@
---[[
-                 █████████
-                 █ KENAE █   
-                 █████████
-              CH > @KEANEN
+
+  |_   _|__| |__    / \  | | _| ____|
+    | |/ __| '_ \  / _ \ | |/ /  _|
+    | |\__ \ | | |/ ___ \|   <| |___
+    |_||___/_| |_/_/   \_\_|\_\_____|
+              CH > @KENAE
+
 --]]
 serpent = require('serpent')
 serp = require 'serpent'.block
@@ -1634,7 +1636,7 @@ end
  f:write(text)
  f:close()
  local KENAEe = 'https://api.telegram.org/bot' .. token .. '/sendDocument'
- local curl = 'curl "' .. KENAE .. '" -F "chat_id=' .. msg.chat_id_ .. '" -F "document=@' .. 'KENAE.txt' .. '"'
+ local curl = 'curl "' .. KENAEe .. '" -F "chat_id=' .. msg.chat_id_ .. '" -F "document=@' .. 'KENAE.txt' .. '"'
  io.popen(curl)
  end
 if text:match("^$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
@@ -1729,13 +1731,13 @@ getUser(msg.sender_user_id_, keko333)
 end
 if tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 if (msg.content_.text_ == 'الملفات' ) then
-local files_KENAE2 = database:smembers("files"..bot_id)
+local files_KENAE = database:smembers("files"..bot_id)
 local keko = io.popen('cd files_KENAE && ls'):read("*all")
-local files_KENAE = ''
-for i=1,#files_KENAE2 do
-files_KENAE2 = files_KENAE..'{'..files_KENAE[i]..'}\n'
-
-send(msg.chat_id_, msg.id_, 1, '☑┇جميع الملفات : \n '..keko..'\n ---------------------- \n\n✔┇الملفات المفعله \n'..files_KENAE..'', 1, 'html')
+local files_KENAE2 = ''
+for i=1,#files_KENAE do
+files_KENAE2 = files_KENAE2..'{'..files_KENAE[i]..'}\n'
+end
+send(msg.chat_id_, msg.id_, 1, '☑┇جميع الملفات : \n '..keko..'\n ---------------------- \n\n✔┇الملفات المفعله \n'..files_KENAE2..'', 1, 'html')
 end
 text = msg.content_.text_
 if text then
@@ -1752,14 +1754,14 @@ return s
 end
 local f = load("files_KENAE/"..name_t[2]..".lua")
 if f ~= "keko" then
-if f:match("^(.*)(keko_KENAEe)(.*)$") then
+if f:match("^(.*)(keko_KENAE)(.*)$") then
 database:sadd("files"..bot_id,name_t[2]..'.lua')
 send(msg.chat_id_, msg.id_, 1, "✔┇تم تفعيل {"..name_t[2]..".lua}", 1, 'html')
 else
-send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس كيناي \n 🦁┇[ملفات يدعمها سورس كيناي](t.me/KENAE)', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس كيناي \n 🦁┇[ملفات يدعمها سورس كيناي](t.me/KENAEFiles)', 1, 'md')
 end
 else
-send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس كيناي \n 🦁┇[ملفات يدعمها سورس كيناي](t.me/KENAE)', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس كيناي \n 🦁┇[ملفات يدعمها سورس كيناي](t.me/KENAEFiles)', 1, 'md')
 end
 end
 if text:match("^(تعطيل ملف) (.*)(.lua)$") then
@@ -1784,8 +1786,8 @@ end
 if text:match("^(جلب ملف) (.*)(.lua)$") then
 local name_t = {string.match(text, "^(جلب ملف) (.*)(.lua)$")}
 send(msg.chat_id_, msg.id_, 1, "🕡┇ انتظر بعض الوقت وسيتم جلب \n 📁┇ملف : {"..name_t[2]..".lua}", 1, 'html')
-local KENAE = 'https://api.telegram.org/bot' .. token .. '/sendDocument'
-local curl = 'curl "' .. KENAE .. '" -F "chat_id=' .. msg.chat_id_ .. '" -F "document=@' .. 'files_KENAE/'..name_t[2]..'.lua' .. '"'
+local KENAEe = 'https://api.telegram.org/bot' .. token .. '/sendDocument'
+local curl = 'curl "' .. KENAEe .. '" -F "chat_id=' .. msg.chat_id_ .. '" -F "document=@' .. 'files_KENAE/'..name_t[2]..'.lua' .. '"'
 io.popen(curl)
 end
 end
