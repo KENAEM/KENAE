@@ -397,7 +397,7 @@ local function send(chat_id, reply_to_message_id, disable_notification, text, di
   }
   local keko = "https://api.telegram.org/bot" ..token.. '/sendMessage?chat_id=' .. chat_id
   if reply_to_message_id ~= 0 then
-  keko = keko .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 -- جميع الحقوق محفوظه لفريق تشاكي لايمكنك نسخ او استخدام هذه السطر بدون موافقه الفريق
+  keko = keko .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 -- جميع الحقوق محفوظه لفريق كيناي لايمكنك نسخ او استخدام هذه السطر بدون موافقه الفريق
   end
   if disable_web_page_preview then
   keko = keko .. '&disable_web_page_preview=true'
@@ -1640,7 +1640,7 @@ end
  io.popen(curl)
  end
 if text:match("^تحديث السورس$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
-send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '☑️┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
 os.execute('cd libs && wget https://raw.githubusercontent.com/KENAE/KENAE/master/libs/utils.lua')
 os.execute('rm -rf KENAE.lua')
