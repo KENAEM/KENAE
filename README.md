@@ -3,7 +3,6 @@
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 
 git clone https://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua && chmod +x install.sh && ./install.sh
-
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 فقط اظغط على الكود ولسقه بترمنال
 
