@@ -1639,10 +1639,10 @@ end
  local curl = 'curl "' .. KENAEe .. '" -F "chat_id=' .. msg.chat_id_ .. '" -F "document=@' .. 'KENAE.txt' .. '"'
  io.popen(curl)
  end
-if text:match("^$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+if text:match("^تحديث السورس$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
-os.execute('cd libs && wget https://raw.githubusercontent.com/KENAE/KENAE/master/libs/utils.lua')
+os.execute('cd libs && wget https://raw.githubusercontent.com/KENAEM/KENAE/master/libs/utils.lua')
 os.execute('rm -rf KENAE.lua')
 os.execute('wget https://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua')
 os.exit()
