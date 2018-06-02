@@ -1,8 +1,9 @@
---[[
-                 █████████
-                 █ KENAE █   
-                 █████████
-              CH > @KEANEN
+|_   _|__| |__    / \  | | _| ____|
+    | |/ __| '_ \  / _ \ | |/ /  _|
+    | |\__ \ | | |/ ___ \|   <| |___
+    |_||___/_| |_/_/   \_\_|\_\_____|
+              CH > @KENAE
+
 --]]
 serpent = require('serpent')
 serp = require 'serpent'.block
@@ -1277,354 +1278,7 @@ database:del("lock_note:KENAE"..msg.chat_id_..bot_id,"ok")
   tsX000("lock",msg,"☑┇تم فتح البوتات")
   database:del("lock_bot:KENAE"..msg.chat_id_..bot_id,"ok")
   end
-  end  
-if is_mod(msg) then
-if (text == "قفل التاك بالتقيد") then
-  local tsX_o = database:get("lock_tag.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ التاك بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ التاك بالتقيد ✓")
-  database:set("lock_tag.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الشارحه بالتقيد") then
-  local tsX_o = database:get("lock_sarha.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الشارحه بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الشارحه بالتقيد ✓")
-  database:set("lock_sarha.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل المتحركه بالتقيد") then
-  local tsX_o = database:get("lock_gif.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ المتحركه بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ المتحركه بالتقيد ✓")
-  database:set("lock_gif.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الملفات بالتقيد") then
-  local tsX_o = database:get("lock_files.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الملفات بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الملفات بالتقيد ✓")
-  database:set("lock_files.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الماركدون بالتقيد") then
-  local tsX_o = database:get("lock_mark.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الماركدون بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الماركدون بالتقيد ✓")
-  database:set("lock_mark.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الصور بالتقيد") then
-  local tsX_o = database:get("lock_photo.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الصور بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الصور بالتقيد ✓")
-  database:set("lock_photo.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الملصقات بالتقيد") then
-  local tsX_o = database:get("lock_stecker.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الملصقات بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الملصقات بالتقيد ✓")
-  database:set("lock_stecker.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الفيديو بالتقيد") then
-  local tsX_o = database:get("lock_video.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الفيديو بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الفيديو بالتقيد ✓")
-  database:set("lock_video.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الانلاين بالتقيد") then
-  local tsX_o = database:get("lock_inline.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الانلاين بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الانلاين بالتقيد ✓")
-  database:set("lock_inline.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الدردشه بالتقيد") then
-  local tsX_o = database:get("lock_chat.note:tKENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الدردشه بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الدردشه بالتقيد ✓")
-  database:set("lock_chat.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل التوجيه بالتقيد") then
-  local tsX_o = database:get("lock_fwd.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ التوجيه بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ التوجيه بالتقيد ✓")
-  database:set("lock_fwd.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الاغاني بالتقيد") then
-  local tsX_o = database:get("lock_audeo.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الاغاني بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الاغاني بالتقيد ✓")
-  database:set("lock_audeo.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الصوت بالتقيد") then
-  local tsX_o = database:get("lock_voice.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الصوت بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الصوت بالتقيد ✓")
-  database:set("lock_voice.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الجهات بالتقيد") then
-  local tsX_o = database:get("lock_contact.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الجهات بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الجهات بالتقيد ✓")
-  database:set("lock_contact.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل العربيه بالتقيد") then
-  local tsX_o = database:get("lock_ar.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-    tsX000("lock",msg,"👁‍🗨 ⫶ العربيه بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ العربيه بالتقيد ✓")
-  database:set("lock_ar.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الانكليزيه بالتقيد") then
-  local tsX_o = database:get("lock_en.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الانكليزيه بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الانكليزيه بالتقيد ✓")
-  database:set("lock_en.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل الروابط بالتقيد") then
-  local tsX_o = database:get("lock_link.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-    tsX000("lock",msg,"👁‍🗨 ⫶ الروابط بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ الروابط بالتقيد ✓")
-  database:set("lock_link.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل المعرف بالتقيد") then
-  local tsX_o = database:get("lock_username.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-   tsX000("lock",msg,"👁‍🗨 ⫶ المعرف بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ المعرف بالتقيد ✓")
-  database:set("lock_username.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "قفل بصمه الفيديو بالتقيد") then
-  local tsX_o = database:get("lock_note.note:KENAE"..msg.chat_id_..bot_id)
-  if tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ بصمه الفيديو بالتقيد ⌁ مقفول ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم قفل ⌁ بصمه الفيديو بالتقيد ✓")
-  database:set("lock_note.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-end
-if is_mod(msg) then
-  if (text == "فتح التاك بالتقيد") then
-  local tsX_o = database:get("lock_tag.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ التاك بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ التاك بالتقيد ✓")
-  database:del("lock_tag.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الشارحه بالتقيد") then
-  local tsX_o = database:get("lock_sarha.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الشارحه بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الشارحه بالتقيد ✓")
-  database:del("lock_sarha.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح المتحركه بالتقيد") then
-  local tsX_o = database:get("lock_gif.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-   tsX000("lock",msg,"👁‍🗨 ⫶ المتحركه بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ المتحركه بالتقيد ✓")
-  database:del("lock_gif.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الملفات بالتقيد") then
-  local tsX_o = database:get("lock_files.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الملفات بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الملفات بالتقيد ✓")
-  database:del("lock_files.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الماركدون بالتقيد") then
-  local tsX_o = database:get("lock_mark.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الماركدون بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الماركدون بالتقيد ✓")
-  database:del("lock_mark.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الصور بالتقيد") then
-  local tsX_o = database:get("lock_photo.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الصور بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الصور بالتقيد ✓")
-  database:del("lock_photo.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الملصقات بالتقيد") then
-  local tsX_o = database:get("lock_stecker.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الملصقات بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الملصقات بالتقيد ✓")
-  database:del("lock_stecker.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الفيديو بالتقيد") then
-  local tsX_o = database:get("lock_video.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الفيديو بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الفيديو بالتقيد ✓")
-  database:del("lock_video.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الانلاين بالتقيد") then
-  local tsX_o = database:get("lock_inline.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الانلاين بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الانلاين بالتقيد ✓")
-  database:del("lock_inline.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الدردشه بالتقيد") then
-  local tsX_o = database:get("lock_chat.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الدردشه بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الدردشه بالتقيد ✓")
-  database:del("lock_chat.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح التوجيه بالتقيد") then
-  local tsX_o = database:get("lock_fwd.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ التوجيه بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ التوجيه بالتقيد ✓")
-  database:del("lock_fwd.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الاغاني بالتقيد") then
-  local tsX_o = database:get("lock_audeo.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الاغاني بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الاغاني بالتقيد ✓")
-  database:del("lock_audeo.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الصوت بالتقيد") then
-  local tsX_o = database:get("lock_voice.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الصوت بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الصوت بالتقيد ✓")
-  database:del("lock_voice.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الجهات بالتقيد") then
-  local tsX_o = database:get("lock_contact.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الجهات بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الجهات بالتقيد ✓")
-  database:del("lock_contact.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح العربيه بالتقيد") then
-  local tsX_o = database:get("lock_ar.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ العربيه بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ العربيه بالتقيد ✓")
-  database:del("lock_ar.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الانكليزيه بالتقيد") then
-  local tsX_o = database:get("lock_en.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الانكليزيه بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الانكليزيه بالتقيد ✓")
-  database:del("lock_en.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح المعرف بالتقيد") then
-  local tsX_o = database:get("lock_username.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ المعرف بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ المعرف بالتقيد ✓")
-  database:del("lock_username.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح بصمه الفيديو بالتقيد") then
-  local tsX_o = database:get("lock_note.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ بصمه الفيديو بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ بصمه الفيديو بالتقيد ✓")
-  database:del("lock_note.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  if (text == "فتح الروابط بالتقيد") then
-  local tsX_o = database:get("lock_link.note:KENAE"..msg.chat_id_..bot_id)
-  if not tsX_o then
-  tsX000("lock",msg,"👁‍🗨 ⫶ الروابط بالتقيد ⌁ مفتوح ✓")
-  else
-  tsX000("lock",msg,"👁‍🗨 ⫶ تم فتح ⌁ الروابط بالتقيد ✓")
-  database:del("lock_link.note:KENAE"..msg.chat_id_..bot_id,"ok")
-  end
-  end
-  end 
---         »»               End KENAE unlock                       ««              --
+  end  --         »»               End KENAE unlock                       ««              --
   end 
 end 
   --         »»               Start Function Check Msg                       ««              --
@@ -1825,7 +1479,7 @@ if msg.content_.text_ then
 if text:match("^مغادره$") then
 if not database:get('KENAE:'..bot_id..'leave:groups') then
 chat_leave(msg.chat_id_, bot_id)
-send(msg.chat_id_, msg.id_, 1, "���┇تم مغادره المجموعه", 1, 'md')
+send(msg.chat_id_, msg.id_, 1, "☑┇تم مغادره المجموعه", 1, 'md')
 else
 end
 end
@@ -1984,12 +1638,13 @@ end
  local curl = 'curl "' .. KENAEe .. '" -F "chat_id=' .. msg.chat_id_ .. '" -F "document=@' .. 'KENAE.txt' .. '"'
  io.popen(curl)
  end
-if text:match("^$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+if text:match("^تحديث السورس$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
 os.execute('cd libs && wget https://raw.githubusercontent.com/KENAE/KENAE/master/libs/utils.lua')
 os.execute('rm -rf KENAE.lua')
-os.execute('wget https://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua')
+os.execute('wgethttps://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua')
+os.exit()
 return false
 end
 if text:match("^وضع وقت (%d+)$") then
@@ -2102,10 +1757,10 @@ if f:match("^(.*)(keko_KENAE)(.*)$") then
 database:sadd("files"..bot_id,name_t[2]..'.lua')
 send(msg.chat_id_, msg.id_, 1, "✔┇تم تفعيل {"..name_t[2]..".lua}", 1, 'html')
 else
-send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس كيناي \n 🦁┇[ملفات يدعمها سورس كيناي](tel/KENAEFiles)', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس كيناي \n 🦁┇[ملفات يدعمها سورس كيناي](t.me/KENAEFiles)', 1, 'md')
 end
 else
-send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس كيناي \n 🦁┇[ملفات يدعمها سورس كيناي](tel/KENAEFiles)', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '⚠┇عذرا لا يمكن تشغيل {'..name_t[2]..'.lua} \n❗┇لانه لا يدعم سورس كيناي \n 🦁┇[ملفات يدعمها سورس كيناي](t.me/KENAEFiles)', 1, 'md')
 end
 end
 if text:match("^(تعطيل ملف) (.*)(.lua)$") then
@@ -2273,86 +1928,7 @@ end
   os.execute('cd .. &&  rm -rf .telegram-cli')
   os.execute('cd .. &&  rm -fr .telegram-cli')
   end
-  if text:match("^تقيد$")  and is_mod(msg) and msg.reply_to_message_id_ then
-  function res_by_reply(extra, result, success)
-    local hash =  'KENAE:'..bot_id..'res:'..msg.chat_id_
-if ck_mod(result.sender_user_id_, msg.chat_id_) then
-  send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع تقييد \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
-  else
-  if database:sismember(hash, result.sender_user_id_) then
-  tsX000("prore",msg,'👁‍🗨 ⫶ بالفعل تم تقيد ⌁ العضو ✓')
-  else
-  HTTPS.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. result.sender_user_id_ .. "")
-  database:sadd(hash, result.sender_user_id_)
-  tsX000("prore",msg,'👁‍🗨 ⫶ تم تقيد ⌁ العضو ✓')
-  end
-  end
-  end
-  getMessage(msg.chat_id_, msg.reply_to_message_id_,res_by_reply)
-  end
-  if text:match("^تقيد @(.*)$") and is_mod(msg) then
-  local res = {string.match(text, "^(تقيد) @(.*)$")}
-function res_by_username(extra, result, success)
-    if result.id_ then
-    if ck_mod(result.id_, msg.chat_id_) then
-  send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع تقييد \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
-  else
-  HTTPS.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. result.id_ .. "")
-  database:sadd('KENAE:'..bot_id..'res:'..msg.chat_id_, result.id_)
-  texts = '👁‍🗨 ⫶ ايديك ⌁ '..msg.sender_user_id_..'\n👁‍🗨 ⫶ تم تقيد ⌁ العضو ✓'
-  end
-  else
-  texts = '✖️┇خطاء'
-  end
-  send(msg.chat_id_, msg.id_, 1, texts, 1, 'md')
-  end
-  resolve_username(res[2],res_by_username)
-  end
-  if text:match("^تقيد (%d+)$") and is_mod(msg) then
-  local res = {string.match(text, "^(تقيد) (%d+)$")}
-      if ck_mod(apba[2], msg.chat_id_) then
-  send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع تقييد \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
-  else
-  HTTPS.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. res[2] .. "")
-  database:sadd('KENAE:'..bot_id..'res:'..msg.chat_id_, res[2])
-  tsX000(res[2],msg,"👁‍🗨 ⫶ تم تقيد ⌁ العضو ✓")
-  end
-  end
-  if text:match("^الغاء تقيد$") and is_mod(msg) and msg.reply_to_message_id_ then
-  function res_by_reply(extra, result, success)
- local hash =  'KENAE:'..bot_id..'res:'..msg.chat_id_
-  if not database:sismember(hash, result.sender_user_id_) then
-    tsX000("prore",msg,"👁‍🗨 ⫶ بالفعل تم الغاء تقيد ⌁ العضو ✓")
-  else
-  HTTPS.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. result.sender_user_id_ .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
-  database:srem(hash, result.sender_user_id_)
-      tsX000("prore",msg,"👁‍🗨 ⫶ تم الغاء تقيد ⌁ العضو ✓")
-  end
-  end
-  getMessage(msg.chat_id_, msg.reply_to_message_id_,res_by_reply)
-  end
-  if text:match("^الغاء تقيد @(.*)$") and is_mod(msg) then
-  local hash =  'KENAE:'..bot_id..'res:'..msg.chat_id_
-  local res = {string.match(text, "^(الغاء تقيد) @(.*)$")}
-  function res_by_username(extra, result, success)
-  if result.id_ then
-  HTTPS.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. result.id_ .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
-  database:srem(hash, result.id_)
-  texts = '👁‍🗨 ⫶ ايديك ⌁ '..msg.sender_user_id_..'\n👁‍🗨 ⫶ تم الغاء تقيد ⌁ العضو ✓'
-  else
-  texts = '✖️┇خطاء'
-  end
-  send(msg.chat_id_, msg.id_, 1, texts, 1, 'md')
-  end
-  resolve_username(res[2],res_by_username)
-  end
-  if text:match("^الغاء تقيد (%d+)$") and is_mod(msg) then
-  local hash =  'KENAE:'..bot_id..'res:'..msg.chat_id_
-  local res = {string.match(text, "^(الغاء تقيد) (%d+)$")}
-  HTTPS.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. res[2] .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
-  database:srem(hash, res[2])
-    tsX000(res[2],msg,"👁‍🗨 ⫶ تم الغاء تقيد ⌁ العضو ✓")
-  end
+  
   if text:match("^رفع ادمن$")  and is_owner(msg) and msg.reply_to_message_id_ then
   function promote_by_reply(extra, result, success)
   local hash =  'KENAE:'..bot_id..'mods:'..msg.chat_id_
@@ -2985,37 +2561,7 @@ texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apow[2] or 'KENAE
   end
     resolve_username(apow[2],remowner_by_username)
   end
-    if  text:match("^المقيدين$") and is_mod(msg) then
-  local hash =   'KENAE:'..bot_id..'res:'..msg.chat_id_
-    local list = database:smembers(hash)
-    text = "👁‍🗨 ⁞ قائمـة ٱلمقيديـن\n••••••••••••••••••••••••••••••••\n"
-    for k,v in pairs(list) do
-    local user_info = database:hgetall('KENAE:'..bot_id..'user:'..v)
-  if user_info and user_info.username then
-  local username = user_info.username
-  text = text.."◖"..k.."◗⊳◖(@"..username..")◗\n"
-  else
-  text = text.."◖"..k.."◗⊳◖(`"..v.."`)◗\n"
-  end
-	  if #text > 7000 then
-    send(msg.chat_id_, msg.id_, 1, text, 1, 'md')
-	text = ""
-	end
-    end
-    if #list == 0 then
-  text = "👁‍🗨 ⫶ لا يوجد اعظاء ⌁ مقيدين ✓"
-  end
-    send(msg.chat_id_, msg.id_, 1, text, 1, 'md')
-  end
-
-  if  text:match("^مسح المقيدين$") and is_mod(msg) then
-  local hash =   'KENAE:'..bot_id..'res:'..msg.chat_id_
-    local list = database:smembers(hash) 
-    for k,v in pairs(list) do database:del('KENAE:'..bot_id..'res:'..msg.chat_id_) 
-HTTPS.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" .. v .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
-end
-  send(msg.chat_id_, msg.id_, 1, '👁‍🗨 ⫶ تم مسح الاعظاء ⌁ المقيدين ✓', 1, 'md')
-  end  
+    
     if text:match("^تنزيل مدير (%d+)$") and is_creator(msg) then
     local hash =  'KENAE:'..bot_id..'owners:'..msg.chat_id_
     local apow = {string.match(text, "^(تنزيل مدير) (%d+)$")}
@@ -3046,8 +2592,6 @@ end
     send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
   end
   -----------------------------------------------
-
-
     if text:match("^الاعضاء المميزين") and is_owner(msg) then
   local hash =   'KENAE:'..bot_id..'vipgp:'..msg.chat_id_
     local list = database:smembers(hash)
@@ -4593,17 +4137,15 @@ end
 
      if text:match("^الاوامر$") and is_mod(msg) then
   local help = redis:get('KENAE:'..bot_id..'help')
-     local text =  [[📮┇هناكـ {5} اوام لعرضها
+     local text =  [[📮┇هناك {4} اوامر لعرضها
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🗑┇م1 ~⪼ لعرض اوامر الحمايه
 
-📛┇م2 ~⪼ لعرض اوامر الحمايه
+📚┇ م2 ~⪼ لعرض اوامر الادمنيه
 
-📚┇م3 ~⪼ لعرض اوامر الادمنيه
+🗓┇م3 ~⪼ لعرض اوامر المدراء
 
-🗓┇م4 ~⪼ لعرض اوامر المدراء
-
-🎖┇م5 ~⪼ لعرض اوامر المطورين
+🎖┇م4 ~⪼ لعرض اوامر المطورين
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉]]
   send(msg.chat_id_, msg.id_, 1, (help or text), 1, 'md')
      end
@@ -4672,32 +4214,8 @@ end
    send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
      return false end
     end
-  if text:match("^م2$") and is_mod(msg) then
-  local res = redis:get('KENAE:'..bot_id..'hres')
-     local text =  [[🚸⁞ اوامر حمايه بالتقيد
-┓ـ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯ـ┏
-🚸ـ قفل ~⪼ الامر ~⪼ بالتقيد
-🚸ـ فتح ~⪼ الامر ~⪼ بالتقيد
-┛ـ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯ـ┗
-┓ـ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯ـ┏
-
-• الروابط ⑅ المعرف 
-• التاك ⑅ الشارحه 
-• المتحركه ⑅ الملفات 
-• الصور ⑅ الملصقات 
-• الفيديو ⑅ الانلاين 
-• الدردشه ⑅ التوجيه 
-• الاغاني ⑅ الصوت 
-• الجهات ⑅ الماركدون 
-• العربيه ⑅ الانكليزية 
-• تقيد ⑅ الغاء تقيد ⑅ المقيدين 
-• مسح المقيدين ⑅ اعدادات التقيد
-
-┛ـ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯ـ┗]]
-  send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'md')
-     end
-     if text:match("^م3$") and is_mod(msg) then
-   local h2 = redis:get('KENAE:'..bot_id..'h3')
+     if text:match("^م2$") and is_mod(msg) then
+   local h2 = redis:get('KENAE:'..bot_id..'h2')
      local text =  [[	🥈┇اوامر الادمنيه
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
   🚫┇كتم
@@ -4752,22 +4270,22 @@ end
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
   📡┇Ch ~⪼ @KENAE	
 							]]
-  send(msg.chat_id_, msg.id_, 1, (h3 or text), 1, 'md')
+  send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'md')
      end
-  if (text and text == 'تغير امر م4') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+  if (text and text == 'تغير امر م3') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
    send(msg.chat_id_, msg.id_, 1, '📥┇الان يمكنك ارسال الكليشه  ليتم حفظها', 1, 'html')
-   redis:set('KENAE:'..bot_id..'h44'..msg.sender_user_id_..'', 'msg')
+   redis:set('KENAE:'..bot_id..'h33'..msg.sender_user_id_..'', 'msg')
      return false end
    if text:match("^(.*)$") then
-   local keko2 = redis:get('KENAE:'..bot_id..'h44'..msg.sender_user_id_..'')
+   local keko2 = redis:get('KENAE:'..bot_id..'h33'..msg.sender_user_id_..'')
    if keko2 == 'msg' then
    send(msg.chat_id_, msg.id_, 1, '☑┇تم حفظ الكليشه يمكنك اظهارها بارسال الامر', 1, 'html')
-   redis:set('KENAE:'..bot_id..'h44'..msg.sender_user_id_..'', 'no')
-   redis:set('KENAE:'..bot_id..'h4', text)
+   redis:set('KENAE:'..bot_id..'h33'..msg.sender_user_id_..'', 'no')
+   redis:set('KENAE:'..bot_id..'h3', text)
    send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
      return false end
     end
-  if text:match("^م4$") and is_mod(msg) then
+  if text:match("^م3$") and is_mod(msg) then
   local h4 = redis:get('KENAE:'..bot_id..'h3')
   local text =  [[🥇┇ اوامر المدراء
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -4821,24 +4339,24 @@ end
   🔘┇تعين الايدي
   🔘┇مسح الايدي
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ]]
-  send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'md')
+  send(msg.chat_id_, msg.id_, 1, (h3 or text), 1, 'md')
      end
-  if (text and text == 'تغير امر م5') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+  if (text and text == 'تغير امر م4') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
     send(msg.chat_id_, msg.id_, 1, '📥┇الان يمكنك ارسال الكليشه  ليتم حفظها', 1, 'html')
-    redis:set('KENAE:'..bot_id..'h55'..msg.sender_user_id_..'', 'msg')
+    redis:set('KENAE:'..bot_id..'h44'..msg.sender_user_id_..'', 'msg')
   return false end
     if text:match("^(.*)$") then
-    local keko2 = redis:get('KENAE:'..bot_id..'h55'..msg.sender_user_id_..'')
+    local keko2 = redis:get('KENAE:'..bot_id..'h44'..msg.sender_user_id_..'')
     if keko2 == 'msg' then
     send(msg.chat_id_, msg.id_, 1, '☑┇تم حفظ الكليشه يمكنك اظهارها بارسال الامر', 1, 'html')
-    redis:set('KENAE:'..bot_id..'h55'..msg.sender_user_id_..'', 'no')
-    redis:set('KENAE:'..bot_id..'h5', text)
+    redis:set('KENAE:'..bot_id..'h44'..msg.sender_user_id_..'', 'no')
+    redis:set('KENAE:'..bot_id..'h4', text)
     send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
   return
    false
  end
      end
-     if text:match("^م5$") and is_mod(msg) then
+     if text:match("^م4$") and is_mod(msg) then
   local h4 = redis:get('KENAE:'..bot_id..'h4')
   local text =  [[🎖┇اوامر المطور
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -4920,14 +4438,13 @@ end
   🗯┇تعطيل الانلاين
     ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
   📡┇Ch ~⪼ @KE_ANE]]
-  send(msg.chat_id_, msg.id_, 1, (h5 or text), 1, 'html')
+  send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
      end
-
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
   local text =  [[                             
  ⇓⇓⇓               👉🏻 تنصيب سورس كيناي
   
-git clone https://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua && ./install.sh     
+git clone https://github.com/KENAE/KENAE && cd KENAE && chmod +x install.sh && ./install.sh     
 
 » فقط أضغط على الكود ☝️ ليتم النسخ   
 » ثم الصقه بالترمنال وانتر تتنظر يتنصب 
