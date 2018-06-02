@@ -1987,10 +1987,9 @@ end
 if text:match("^$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
-os.execute('cd libs && wget https://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua')
+os.execute('cd libs && wget https://raw.githubusercontent.com/KENAE/KENAE/master/libs/utils.lua')
 os.execute('rm -rf KENAE.lua')
-os.execute('wget https://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua')
-os.exit()
+os.execute('wget https://raw.githubusercontent.com/KENAE/KENAE/master/KENAE.lua')os.exit()
 return false
 end
 if text:match("^وضع وقت (%d+)$") then
