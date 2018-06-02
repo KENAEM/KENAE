@@ -1644,7 +1644,7 @@ send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
 os.execute('cd libs && wget https://raw.githubusercontent.com/KENAE/KENAE/master/libs/utils.lua')
 os.execute('rm -rf KENAE.lua')
-os.execute('wgethttps://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua')
+os.execute('wget https://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua')
 os.exit()
 return false
 end
@@ -4445,7 +4445,7 @@ end
   local text =  [[                             
  ⇓⇓⇓               👉🏻 تنصيب سورس كيناي
   
-git clone https://github.com/KENAE/KENAE && cd KENAE && chmod +x install.sh && ./install.sh     
+git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh
 
 » فقط أضغط على الكود ☝️ ليتم النسخ   
 » ثم الصقه بالترمنال وانتر تتنظر يتنصب 
