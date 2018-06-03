@@ -4443,9 +4443,10 @@ end
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
   local text =  [[                             
- ⇓⇓⇓               👉🏻 تنصيب سورس كيناي
+ ⇓⇓⇓               👉🏻  تنصيب سورس كيناي
   
-git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh
+ `<br> git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh`<br> 
+
 
 » فقط أضغط على الكود ☝️ ليتم النسخ   
 » ثم الصقه بالترمنال وانتر تتنظر يتنصب 
