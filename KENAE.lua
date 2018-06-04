@@ -4459,7 +4459,6 @@ end
 																	
 [@KE_ANE]      قناة السورس
 
-📮┇<a href="t.me/KENAEebot">لـ تواصل </a> 
   ]]
   send(msg.chat_id_, msg.id_, 1, text, 1, 'md')
   end
