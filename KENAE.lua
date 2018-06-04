@@ -4442,8 +4442,10 @@ end
   send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
-  local text =  [[                             
- تنصيب سورس كيناي  🏻👉
+  local text =  [[
+  👋┇اهلا بك في سورس كيناي 
+    
+  🌐┇<strong>KE_ANE </strong>
 
 ⇓⇓⇓             
 
