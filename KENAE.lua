@@ -4443,14 +4443,11 @@ end
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
   local text =  [[
-  👋┇اهلا بك في سورس كيناي 
+    🌐┇<strong>KE_ANE</strong>
     
-  🌐┇<strong>KE_ANE </strong>
-
-						
-						
-						
-						
+ 
+👋┇اهلا بك في سورس كيناي
+																							
 ⇓⇓⇓             
 
 						
