@@ -4446,8 +4446,9 @@ end
  تنصيب سورس كيناي  🏻👉
 
 ⇓⇓⇓             
-  
-`git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh`
+
+						
+``git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh``
 
 
 » فقط أضغط على الكود ☝️ ليتم النسخ   
