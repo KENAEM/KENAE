@@ -796,12 +796,12 @@ function TSlocks(msg) -- Function locks && unlocks
 local text = msg.content_.text_
 if text then
 --         »»               Start KENAE lock                       ««              --
-if (text == "قٰہٰٖفٰہٰٖلہٰٖ اٰلہٰٖتٰہٰٖاٰكٰہٰٖ ") then
+if (text == "قفل التاك") then
   local tsX_o = database:get("lock_tag:KENAE"..msg.chat_id_..bot_id)
   if tsX_o then
-  tsX000("lock",msg,"☑┇بٰہٰٖاٰلہٰٖفٰہٰٖعٰہٰٖلہٰٖ تٰہٰٖمٰہٰٖ قٰہٰٖفٰہٰٖلہٰٖ اٰلہٰٖتٰہٰٖاٰكٰہٰٖ")
+  tsX000("lock",msg,"☑┇بالفعل تم قفل التاك")
   else
-  tsX000("lock",msg,"☑┇قٰہٰٖفٰہٰٖلہٰٖ اٰلہٰٖتٰہٰٖاٰكٰہٰٖ ")
+  tsX000("lock",msg,"☑┇تم قفل التاك")
   database:set("lock_tag:KENAE"..msg.chat_id_..bot_id,"ok")
   end
   end
