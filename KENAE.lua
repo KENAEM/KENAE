@@ -4455,7 +4455,7 @@ end
 [@KE_ANE]      قناة السورس
 
   ]]
-  send(msg.chat_id_, msg.id_, 1, text, 1, 'md')
+ send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
   end
 
   if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
