@@ -1,6 +1,11 @@
---[[            CH > @KENAE
-
---]]
+--[[    _  ____ _   _          __
+| |/ /  ____| \ | |   /\   |  ____|
+| ' /| |__  |  \| |  /  \  | |__
+|  < |  | | . ` | / /\ \ |  |
+| . \| |____| |\  |/ ____ \| |____
+|_|\_\______|_| \_/_/    \_\______|                                                                               
+               CH > @KENAE                                                                                                   
+--]]                                                              
 serpent = require('serpent')
 serp = require 'serpent'.block
 https = require("ssl.https")
@@ -4700,9 +4705,14 @@ getMessage(msg.chat_id_, msg.message_id_,get_msg_contact)
 elseif (data.ID == "UpdateOption" and data.name_ == "my_id") then
 tdcli_function ({ID="GetChats", offset_order_="9223372036854775807", offset_chat_id_=0, limit_=20}, dl_cb, nil)
 end
-end
-
---[[
-  
-                  CH > @KENAE
+end                                              
+         _  ____ _   _          __
+| |/ /  ____| \ | |   /\   |  ____|
+| ' /| |__  |  \| |  /  \  | |__
+|  < |  | | . ` | / /\ \ |  |
+| . \| |____| |\  |/ ____ \| |____
+|_|\_\______|_| \_/_/    \_\______|                                                                    
+--[[                                                                                                                                               
+                CH > @KENAE                                  
+                 
 --]]
