@@ -1,6 +1,5 @@
 --[[            CH > @KENAE
 
---]]
 serpent = require('serpent')
 serp = require 'serpent'.block
 https = require("ssl.https")
