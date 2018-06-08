@@ -4143,7 +4143,7 @@ end
 
 🎖┇م4 ~⪼ لعرض اوامر المطورين
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉]]
-send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'md')
+send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'id')
  end
 
 if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
