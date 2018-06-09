@@ -4454,7 +4454,8 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
 		    
 ./KENAE/ts  كود رن
 																		
-@KEN_AE المطور
+@KEN_AE     المطور
+
 [@KE_NAE]  قناة السورس
 
   ]]
