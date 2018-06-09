@@ -1,6 +1,7 @@
 لتنصيب سورس كيناي ع التوكن
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
+
 `gi  clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh`
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
