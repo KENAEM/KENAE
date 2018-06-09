@@ -1,10 +1,10 @@
-#!/usr/bin/env bash                                              
-cd KENAE          _  ________ _   _          ______
-echo -e "\e[33m  | |/ /  ____| \ | |   /\   |  ____| \e[0m"                      
-echo -e "\e[33m  | ' /| |    |  \| |  /  \  | |     \e[0m"     
-echo -e "\e[33m  | < |   |   | . ` | / /\ \ |  |   \e[0m"  
-echo -e "\e[33m  | . \| |____| |\  |/ ____ \| |___   \e[0m"   
-echo -e "\e[33m  |_|\_\______|_| \_/_/    \_\______| \e[0m"   
-while(true) do       
-lua start.lua   
-done
+#!/usr/bin/env bash تم البرمجه من قبل القيصر علي العراقي                                                 
+cd KENAE                                                                 
+echo -e "\e[33m        _  ________ _   _          ______
+echo -e "\e[33m       | |/ /  ____| \ | |   /\   |  ____|
+echo -e "\e[33m       | ' /| |    |  \| |  /  \  | |
+echo -e "\e[33m       |  < |  |   | . ` | / /\ \ |  |
+echo -e "\e[33m       | . \| |____| |\  |/ ____ \| |____
+while(true) do        |_|\_\______|_| \_/_/    \_\______|
+lua start.lua
+don
