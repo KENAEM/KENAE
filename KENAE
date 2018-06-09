@@ -1,10 +1,10 @@
-#!/usr/bin/env bash                                                
+#!/usr/bin/env bash                                                 
 cd KENAE                                                                 
-echo -e "\e[33m       
-echo -e "\e[33m      
-echo -e "\e[33m      
-echo -e "\e[33m     
-echo -e "\e[33m      
-while(true) do      
+echo -e "\e[33m        _  ________ _   _          ______
+echo -e "\e[33m       | |/ /  ____| \ | |   /\   |  ____|
+echo -e "\e[33m       | ' /| |__  |  \| |  /  \  | |__
+echo -e "\e[33m       |  < |  __| | . ` | / /\ \ |  __|
+echo -e "\e[33m       | . \| |____| |\  |/ ____ \| |____
+while(true) do        |_|\_\______|_| \_/_/    \_\______|
 lua start.lua
 don
