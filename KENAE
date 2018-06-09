@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd Tshake
+cd KENAE
 echo -e "\e[33m         
 echo -e "\e[33m         
 echo -e "\e[33m          
