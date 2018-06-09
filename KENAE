@@ -1,5 +1,5 @@
 #!/usr/bin/env bash                                              
-cd KENAE                _  ________ _   _          ______
+cd KENAE               
 echo -e "\e[33m        | |/ /  ____| \ | |   /\   |  ____| \e[0m"                      
 echo -e "\e[33m        | ' /| |    |  \| |  /  \  | |     \e[0m"     
 echo -e "\e[33m        | < |   |   | . ` | / /\ \ |  |   \e[0m"  
