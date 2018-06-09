@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+cd KENAE
+echo -e "\e[33m"          
+echo -e "\e[33m "        
+echo -e "\e[33m  "         
+echo -e "\e[33m "          
+echo -e "\e[33m  "         
+while(true) do
+lua start.lua 
+done
