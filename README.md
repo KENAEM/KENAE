@@ -1,8 +1,7 @@
 لتنصيب سورس كيناي ع التوكن
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-
-`git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh`
+`gi  clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh`
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 فقط اظغط على الكود ولسقه بترمنال
@@ -23,13 +22,10 @@ Enterتحطه وتضغط
 ./KENAE/ts    كود رن         
  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-
 rm -rf *KENAE   كودحذف التنصيب
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-
- @KENAEAE    المطور                                                                                
+@KENAEAE    المطور                                                                                
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-
 @KE_NAE    قناة السورس
