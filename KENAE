@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-cd KENAE
+#!/usr/bin/env bash تم البرمجه من قبل القيصر علي العراقي                                                 
+cd KENAE                                                                 
 echo -e "\e[33m        _  ________ _   _          ______
 echo -e "\e[33m       | |/ /  ____| \ | |   /\   |  ____|
 echo -e "\e[33m       | ' /| |__  |  \| |  /  \  | |__
