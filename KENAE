@@ -5,6 +5,6 @@ echo -e "\e[33m       | ' /| |__  |  \| |  /  \  | |__
 echo -e "\e[33m       |  < |  __| | . ` | / /\ \ |  __|
 echo -e "\e[33m       | . \| |____| |\  |/ ____ \| |____
 echo -e "\e[33m       |_|\_\______|_| \_/_/    \_\______|
-while(true)do         
+while(true) do         
 lua start.lua
 don
