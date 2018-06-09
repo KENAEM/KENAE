@@ -1,5 +1,5 @@
 #!/usr/bin/env bash                                              
-cd KENAE               
+cd KENAE                
 echo -e "\e[33m        | |/ /  ____| \ | |   /\   |  ____| \e[0m"                      
 echo -e "\e[33m        | ' /| |    |  \| |  /  \  | |     \e[0m"     
 echo -e "\e[33m        | < |   |   | . ` | / /\ \ |  |   \e[0m"  
@@ -8,3 +8,4 @@ echo -e "\e[33m        |_|\_\______|_| \_/_/    \_\______| \e[0m"
 while(true) do       
 lua start.lua   
 done
+
