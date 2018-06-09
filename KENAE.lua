@@ -2243,7 +2243,7 @@ end
   else
     database:sadd(hash, result.sender_user_id_)
     chat_kick(result.chat_id_, result.sender_user_id_)
-	tsX000("prore",msg,"🚫┇تم حظره من مجموعات البوت")
+  tsX000("prore",msg,"🚫┇تم حظره من مجموعات البوت")
   end
   end
   getMessage(msg.chat_id_, msg.reply_to_message_id_,gban_by_reply)
