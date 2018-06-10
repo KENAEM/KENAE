@@ -4462,6 +4462,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
   end
 
 
+
 if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
 local text =  [[
 🗑┇رابط حذف التلي ، ⬇
