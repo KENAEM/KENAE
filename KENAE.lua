@@ -4452,13 +4452,13 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
 » تدخل مـعلومـآتگ مـن توگن وآيدي
 » ثم آنتر سـوف يعمـل آلبوت بسـگرين تلقآئيآ ...                                                   
 		    
-./KENAE/ts          كود رن
+./KENAE/ts كود رن
 																		
-@KEN_AE              المطور   
+@KEN_AE المطور   
 
-@KENAETEAM    قنا ة السورس  
+@KENAETEAM قنا ة السورس  
 
-  ]]
+  --]]
  send(msg.chat_id_, msg.id_, 1, text, 1, 'id')
   end
 
