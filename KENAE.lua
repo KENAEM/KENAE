@@ -4194,7 +4194,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
   🔐┇الميديا
   🔐┇التكرار
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-  📡┇Ch ~⪼ @KENAE]]
+  📡┇Ch ~⪼ @KENAETEAM]]
   send(msg.chat_id_, msg.id_, 1, (h1 or text), 1, 'md')
      end
   if (text and text == 'تغير امر م2') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
@@ -4457,8 +4457,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
 📮┇<a href="t.me/KEN_AE">لـ مطور </a>
 
 📮┇<a href="t.me/KENAETEAM">قناة السورس </a>
-  
-]]
+  ]]
  send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
   end
 
