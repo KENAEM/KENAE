@@ -4454,11 +4454,9 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
 		    
 ./KENAE/ts كود رن
 																		
-@KEN_AE المطور   
+   📮┇<a href="t.me/KEN_AE">لـ مطور </a> 
+  ]] 
 
-@KENAETEAM قنا ة السورس  
-
-]]
  send(msg.chat_id_, msg.id_, 1, text, 1, 'id')
   end
 
