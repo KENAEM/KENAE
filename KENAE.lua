@@ -4437,7 +4437,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
   send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'md')
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
-  local text =  [[
+  local text = [[
    👋┇اهلا بك في سورس كيناي
     																							
 ⇓⇓⇓             
@@ -4457,7 +4457,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
    📮┇<a href="t.me/KEN_AE">لـ مطور </a> 
   ]] 
 
- send(msg.chat_id_, msg.id_, 1, text, 1, 'id')
+ send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
   end
 
   if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
