@@ -4452,14 +4452,14 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
 » تدخل مـعلومـآتگ مـن توگن وآيدي
 » ثم آنتر سـوف يعمـل آلبوت بسـگرين تلقآئيآ ...                                                   
 		    
-./KENAE/ts كود رن
+./KENAE/ts  كود رن
 																		
- 📮┇<a href="t.me/KEN_AE">الـ مطور 
+@KENAEAE المطور
+[@KE_NAE]      قناة السورس
 
-📮┇<a href="t.me/KENAETEAM">قناة السورس </a> 
-]]
-send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
- end
+  ]]
+ send(msg.chat_id_, msg.id_, 1, text, 1, 'id')
+  end
 
 if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
 local text =  [[
