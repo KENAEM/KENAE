@@ -4264,7 +4264,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
   📮┇القوانين
   📮┇الصوره
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-  📡┇Ch ~⪼ @KENAE	
+  📡┇Ch ~⪼ @KENAETEAM	
 							]]
   send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'md')
      end
@@ -4433,7 +4433,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
   🗯┇تفعيل الانلاين
   🗯┇تعطيل الانلاين
     ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-  📡┇Ch ~⪼ @KE_ANE]]
+  📡┇Ch ~⪼ @KENAETEAM]]
   send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'md')
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
@@ -4452,10 +4452,11 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
 » تدخل مـعلومـآتگ مـن توگن وآيدي
 » ثم آنتر سـوف يعمـل آلبوت بسـگرين تلقآئيآ ...                                                   
 		    
-./KENAE/ts  كود رن
+./KENAE/ts          كود رن
 																		
-@KEN_AE     المطور
-@KE_NAE  قنا ة السورس  
+@KEN_AE              المطور   
+
+@KENAETEAM    قنا ة السورس  
 
   ]]
  send(msg.chat_id_, msg.id_, 1, text, 1, 'id')
