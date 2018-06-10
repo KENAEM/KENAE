@@ -4434,7 +4434,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
   🗯┇تعطيل الانلاين
     ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
   📡┇Ch ~⪼ @KENAETEAM]]
-  send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'md')
+  send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
   local text = [[
@@ -4455,10 +4455,12 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
 ./KENAE/ts  كود رن
 																		
 📮┇<a href="t.me/KEN_AE">لـ مطور </a>
-📮┇<a href="t.me/KENAETEAM">لـ مطور </a>
+
+📮┇<a href="t.me/KENAETEAM">قناة السورس </a>
+  
 ]]
-send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
- end
+ send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
+  end
 
 if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
 local text =  [[
