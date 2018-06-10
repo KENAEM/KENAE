@@ -4457,7 +4457,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
 📮┇<a href="t.me/KEN_AE">لـ مطور </a>
 📮┇<a href="t.me/KENAETEAM">لـ مطور </a>
 ]]
-send(msg.chat_id_, msg.id_, 1, text, 1, 'id')
+send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
  end
 
 if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
