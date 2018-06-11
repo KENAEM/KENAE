@@ -800,7 +800,7 @@ if text then
 if (text == "قفل التاك") then
   local tsX_o = database:get("lock_tag:KENAE"..msg.chat_id_..bot_id)
   if tsX_o then
-  tsX000("lock",msg,"☑┇بالفعل تم قفل التاك")
+  tsX000("lock",msg,"☑┇- بٰـہٰٖاٰلـہٰٖفٰـہٰٖعٰـہٰٖلـہٰٖ تٰـہٰٖمٰـہٰٖ قٰـہٰٖفٰـہٰٖلـہٰٖ اٰلـہٰٖتٰـہٰٖاٰكٰـہٰٖ ” ᵛ͢ᵎᵖ📯💛﴾")
   else
   tsX000("lock",msg,"☑┇تم قفل التاك")
   database:set("lock_tag:KENAE"..msg.chat_id_..bot_id,"ok")
