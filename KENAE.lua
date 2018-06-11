@@ -4456,7 +4456,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
 																		
 @KENAE_TEAM  مطورالسورس 
 
-@KENAETEAM  قناة السورس   
+[@KENAETEAM]  قناة السورس   
   ]]
  send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
   end
