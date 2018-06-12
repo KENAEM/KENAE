@@ -591,7 +591,7 @@ end
 function tsX000(value,msg,text)
 if value == "lock" then
 function keko333(extra,result,success)
-info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'..text
+info = '🕹┇الامر بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 send(msg.chat_id_, msg.id_, 1,info, 1, 'md')
  end
 getUser(msg.sender_user_id_, keko333)
@@ -620,7 +620,7 @@ function TSadd(msg) -- Function add && rem
 local text = msg.content_.text_
 if (text == 'تعطيل') and not is_sudo(msg) then
 function TSby(extra,result,success)
-info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '🕹┇الامر بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 local keko2 = database:get("add"..bot_id)
 if keko2 then
 local keko = "https://api.telegram.org/bot" ..token.. '/getChatMember?chat_id=' .. msg.chat_id_ .. '&user_id='..msg.sender_user_id_
@@ -666,7 +666,7 @@ end
 -- end function
 if (text == 'تفعيل') and not is_sudo(msg) then
 function TSby(extra,result,success)
-info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '🕹┇الامر بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 local keko2 = database:get("add"..bot_id)
 if keko2 then
 local keko = "https://api.telegram.org/bot" ..token.. '/getChatMember?chat_id=' .. msg.chat_id_ .. '&user_id='..msg.sender_user_id_
@@ -800,7 +800,7 @@ if text then
 if (text == "قفل التاك") then
   local tsX_o = database:get("lock_tag:KENAE"..msg.chat_id_..bot_id)
   if tsX_o then
-  tsX000("lock",msg,"☑️┇تم قفل التاك📮 ” ᵛ͢ᵎᵖ📯💛﴾")
+  tsX000("lock",msg,"☑️┇بالفعل تم قفل التاك﴾")
   else
   tsX000("lock",msg,"☑┇بالفعل تم قفل التاك")
   database:set("lock_tag:KENAE"..msg.chat_id_..bot_id,"ok")
