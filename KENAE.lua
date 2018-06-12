@@ -4444,24 +4444,24 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
   local text = [[
-   👋┇اهلا بك في سورس كيناي
-    																							
-⇓⇓⇓             
-
-						
+ 📮┇اهلا بك في سورس كيناي                     
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 `git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh`
-
-
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
+✅┇طريقة التنصيب،☢️
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 » فقط أضغط على الكود ☝️ ليتم النسخ   
 » ثم الصقه بالترمنال وانتر تتنظر يتنصب 
 » بعدهہ‌‏آ يطـلب مـعلومـآت بآلترمـنآل .
 » تدخل مـعلومـآتگ مـن توگن وآيدي
 » ثم آنتر سـوف يعمـل آلبوت بسـگرين تلقآئيآ ...                                                   
-		    
-`./KENAE/ts`  كود رن
- 
-🦁|| مطور السورس ~⪼ @KenaiTEAM																	
-📮|| قناة السورس ~⪼[ @KenaTEAM]
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉      
+♻️┇كود الرن ~⪼ `./KENAE/ts`
+⚠️┇ كود الحذف ~⪼ `rm -rf *KENAE`
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉  
+🦁┇[مطور السورس](t.me/KenaiTEAM)               
+📮┇[قناة السورس](t.me/KENAETEAM)
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 ]]
  send(msg.chat_id_, msg.id_, 1, text, 1, 'id')
   end
