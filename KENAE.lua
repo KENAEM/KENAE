@@ -591,7 +591,7 @@ end
 function tsX000(value,msg,text)
 if value == "lock" then
 function keko333(extra,result,success)
-info = '🕹┇تم القفل بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 send(msg.chat_id_, msg.id_, 1,info, 1, 'md')
  end
 getUser(msg.sender_user_id_, keko333)
@@ -620,7 +620,7 @@ function TSadd(msg) -- Function add && rem
 local text = msg.content_.text_
 if (text == 'تعطيل') and not is_sudo(msg) then
 function TSby(extra,result,success)
-info = '🕹┇تم القفل بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 local keko2 = database:get("add"..bot_id)
 if keko2 then
 local keko = "https://api.telegram.org/bot" ..token.. '/getChatMember?chat_id=' .. msg.chat_id_ .. '&user_id='..msg.sender_user_id_
@@ -666,7 +666,7 @@ end
 -- end function
 if (text == 'تفعيل') and not is_sudo(msg) then
 function TSby(extra,result,success)
-info = '🕹┇تم القفل بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 local keko2 = database:get("add"..bot_id)
 if keko2 then
 local keko = "https://api.telegram.org/bot" ..token.. '/getChatMember?chat_id=' .. msg.chat_id_ .. '&user_id='..msg.sender_user_id_
@@ -725,7 +725,7 @@ getUser(msg.sender_user_id_, TSby)
 end
 if text == "تفعيل" and is_sudo(msg) then
 function TSby(extra,result,success)
-info = '🕹┇تم القفل بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 if database:get( 'KENAE:'..bot_id.."charge:"..msg.chat_id_) then
 function KENAE_info(k1,k2)
 send(msg.chat_id_, msg.id_, 1, "❕┇المجموعه {"..(k2.title_ or "").."} مفعله سابقا", 1, 'md')
@@ -759,7 +759,7 @@ getUser(msg.sender_user_id_, TSby)
 end
 if text == "تعطيل" and is_sudo(msg) then
 function TSby(extra,result,success)
-info = '🕹┇تم القفل بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 if not database:get( 'KENAE:'..bot_id.."charge:"..msg.chat_id_) then
 function KENAE_info(k1,k2)
 send(msg.chat_id_, msg.id_, 1, "❕┇المجموعه {"..(k2.title_ or "").."} معطله سابقا", 1, 'md')
