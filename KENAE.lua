@@ -4458,7 +4458,7 @@ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) ==
 » تدخل مـعلومـآتگ مـن توگن وآيدي
 » ثم آنتر سـوف يعمـل آلبوت بسـگرين تلقآئيآ ...                                                   
 		    
-./KENAE/ts  كود رن
+`./KENAE/ts`  كود رن
 																		
   @KenaiTEAM  مطور السورس
 
