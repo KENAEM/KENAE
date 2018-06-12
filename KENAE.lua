@@ -725,7 +725,7 @@ getUser(msg.sender_user_id_, TSby)
 end
 if text == "تفعيل" and is_sudo(msg) then
 function TSby(extra,result,success)
-info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '🕹┇الامر بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 if database:get( 'KENAE:'..bot_id.."charge:"..msg.chat_id_) then
 function KENAE_info(k1,k2)
 send(msg.chat_id_, msg.id_, 1, "❕┇المجموعه {"..(k2.title_ or "").."} مفعله سابقا", 1, 'md')
