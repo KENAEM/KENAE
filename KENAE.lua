@@ -802,7 +802,6 @@ if (text == "قفل التاك") then
   if tsX_o then
   tsX000("lock",msg,"☑️┇تم قفل التاك📮 ” ᵛ͢ᵎᵖ📯💛﴾")
   else
-  else
   tsX000("lock",msg,"☑┇بالفعل تم قفل التاك")
   database:set("lock_tag:KENAE"..msg.chat_id_..bot_id,"ok")
   end
