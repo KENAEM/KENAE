@@ -4606,7 +4606,6 @@ end
 🗓┇م3 ~⪼ لعرض اوامر المدراء
 
 🎖┇م4 ~⪼ لعرض اوامر المطورين
-              اعدادات التقيد            
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉]]
  send(msg.chat_id_, msg.id_, 1, (help or text), 1, 'md')
    end
@@ -4675,7 +4674,7 @@ end
    send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
      return false end
     end
-  if text:match("^م2$") and is_mod(msg) then
+  if text:match("^اعدادات التقيد$") and is_mod(msg) then
   local res = redis:get('KENAE:'..bot_id..'hres')
      local text =  [[🚸⁞ اوامر حمايه بالتقيد
 ┓ـ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯ـ┏
