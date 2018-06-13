@@ -4698,7 +4698,7 @@ end
 ┛ـ⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯ـ┗]]
   send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'md')
      end
-     if text:match("^م3$") and is_mod(msg) then
+     if text:match("^م2$") and is_mod(msg) then
    local h2 = redis:get('KENAE:'..bot_id..'h3')
      local text =  [[	🥈┇اوامر الادمنيه
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -4769,7 +4769,7 @@ end
    send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
      return false end
     end
-  if text:match("^م4$") and is_mod(msg) then
+  if text:match("^م3$") and is_mod(msg) then
   local h4 = redis:get('KENAE:'..bot_id..'h3')
   local text =  [[🥇┇ اوامر المدراء
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -4825,7 +4825,7 @@ end
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ]]
   send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'md')
      end
-  if (text and text == 'تغير امر م5') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+  if (text and text == 'تغير امر م4') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
     send(msg.chat_id_, msg.id_, 1, '📥┇الان يمكنك ارسال الكليشه  ليتم حفظها', 1, 'html')
     redis:set('KENAE:'..bot_id..'h55'..msg.sender_user_id_..'', 'msg')
   return false end
@@ -4840,7 +4840,7 @@ end
    false
  end
      end
-     if text:match("^م5$") and is_mod(msg) then
+     if text:match("^م4$") and is_mod(msg) then
   local h4 = redis:get('KENAE:'..bot_id..'h4')
   local text =  [[🎖┇اوامر المطور
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
