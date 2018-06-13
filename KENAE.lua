@@ -1980,19 +1980,19 @@ for i=1, #gpss do
 local link = database:get('KENAE:'..bot_id.."group:link"..gpss[i])
 text = text.."|"..i.."| ~⪼ "..gpss[i].."\n ~⪼ "..(link or  "لا يوجد رابط").."\n"
 end
- local f = io.open('KENAE.txt', 'w')
+  local f = io.open('KENAE.txt', 'w')
  f:write(text)
  f:close()
  local KENAEe = 'https://api.telegram.org/bot' .. token .. '/sendDocument'
  local curl = 'curl "' .. KENAEe .. '" -F "chat_id=' .. msg.chat_id_ .. '" -F "document=@' .. 'KENAE.txt' .. '"'
  io.popen(curl)
  end
-if text:match("^$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+if text:match("^تحديث السورس$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
-os.execute('cd libs && wget https://raw.githubusercontent.com/KENAE/KENAE/master/libs/utils.lua')
+os.execute('cd libs && wget https://raw.githubusercontent.com/KENAEM/KENAE/master/libs/utils.lua')
 os.execute('rm -rf KENAE.lua')
-os.execute('wget https://raw.githubusercontent.com/KENAE/KENAE/master/KENAE.lua')
+os.execute('wget https://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua')
 os.exit()
 return false
 end
