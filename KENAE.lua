@@ -398,7 +398,7 @@ local function send(chat_id, reply_to_message_id, disable_notification, text, di
   }
   local keko = "https://api.telegram.org/bot" ..token.. '/sendMessage?chat_id=' .. chat_id
   if reply_to_message_id ~= 0 then
-  keko = keko .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 -- جميع الحقوق محفوظه لفريق تشاكي لايمكنك نسخ او استخدام هذه السطر بدون موافقه الفريق
+  keko = keko .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 -- جميع الحقوق محفوظه لفريق ;كيناي لايمكنك نسخ او استخدام هذه السطر بدون موافقه الفريق
   end
   if disable_web_page_preview then
   keko = keko .. '&disable_web_page_preview=true'
@@ -591,7 +591,7 @@ end
 function tsX000(value,msg,text)
 if value == "lock" then
 function keko333(extra,result,success)
-info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'..text
+info = '🕹┇الامر بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 send(msg.chat_id_, msg.id_, 1,info, 1, 'md')
  end
 getUser(msg.sender_user_id_, keko333)
@@ -620,7 +620,7 @@ function TSadd(msg) -- Function add && rem
 local text = msg.content_.text_
 if (text == 'تعطيل') and not is_sudo(msg) then
 function TSby(extra,result,success)
-info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '🕹┇الامر بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 local keko2 = database:get("add"..bot_id)
 if keko2 then
 local keko = "https://api.telegram.org/bot" ..token.. '/getChatMember?chat_id=' .. msg.chat_id_ .. '&user_id='..msg.sender_user_id_
@@ -666,7 +666,7 @@ end
 -- end function
 if (text == 'تفعيل') and not is_sudo(msg) then
 function TSby(extra,result,success)
-info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '🕹┇الامر بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 local keko2 = database:get("add"..bot_id)
 if keko2 then
 local keko = "https://api.telegram.org/bot" ..token.. '/getChatMember?chat_id=' .. msg.chat_id_ .. '&user_id='..msg.sender_user_id_
@@ -725,7 +725,7 @@ getUser(msg.sender_user_id_, TSby)
 end
 if text == "تفعيل" and is_sudo(msg) then
 function TSby(extra,result,success)
-info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '🕹┇الامر بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 if database:get( 'KENAE:'..bot_id.."charge:"..msg.chat_id_) then
 function KENAE_info(k1,k2)
 send(msg.chat_id_, msg.id_, 1, "❕┇المجموعه {"..(k2.title_ or "").."} مفعله سابقا", 1, 'md')
@@ -759,7 +759,7 @@ getUser(msg.sender_user_id_, TSby)
 end
 if text == "تعطيل" and is_sudo(msg) then
 function TSby(extra,result,success)
-info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
+info = '🕹┇الامر بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'KENAEteam')..')\n'
 if not database:get( 'KENAE:'..bot_id.."charge:"..msg.chat_id_) then
 function KENAE_info(k1,k2)
 send(msg.chat_id_, msg.id_, 1, "❕┇المجموعه {"..(k2.title_ or "").."} معطله سابقا", 1, 'md')
@@ -4660,7 +4660,7 @@ end
   🔐┇الميديا
   🔐┇التكرار
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-  📡┇Ch ~⪼ @KENAE]]
+  📡┇Ch ~⪼ @KENAETEAM]]
   send(msg.chat_id_, msg.id_, 1, (h1 or text), 1, 'md')
      end
   if (text and text == 'تغير امر م2') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
@@ -4754,7 +4754,7 @@ end
   📮┇القوانين
   📮┇الصوره
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-  📡┇Ch ~⪼ @KENAE	
+  📡┇Ch ~⪼ @KENAETEAM 	
 							]]
   send(msg.chat_id_, msg.id_, 1, (h3 or text), 1, 'md')
      end
@@ -4923,7 +4923,7 @@ end
   🗯┇تفعيل الانلاين
   🗯┇تعطيل الانلاين
    ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-  📡┇Ch ~⪼ @KENAETEAM]]
+  📡┇Ch ~⪼ @KENAETEAM ]]
   send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'md')
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
