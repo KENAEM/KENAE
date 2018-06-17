@@ -1976,11 +1976,14 @@ send(msg.chat_id_, msg.id_, 1, '☑┇ردود البوت بالفعل تم تع
   else
 send(msg.chat_id_, msg.id_, 1, '☑┇تم تعطيل ردود البوت', 1, 'md')
 database:set('KENAE :'..bot_id..'rep:mute'..msg.chat_id_,true)
+   end
   end
-  end
-end
-end
-end
+  end 
+--         »»               End KENAE unlock                       ««              --
+  end 
+end 
+  --         »»               Start Function Check Msg                       ««              --
+function TSCheckMsg(msg) 
 if text and text:match("(.*)(#)(.*)")  then
 if database:get("lock_sarha:KENAE"..msg.chat_id_..bot_id) then
 delete_msg(msg.chat_id_,{[0] = msg.id_})
