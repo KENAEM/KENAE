@@ -3210,7 +3210,7 @@ end
     local list = database:smembers(hash)
     text = "👥┇قائمة الادمنيه ،\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
     for k,v in pairs(list) do
-    local user_info = database:hgetall('tshake:'..bot_id..'user:'..v)
+    local user_info = database:hgetall('KENAE:'..bot_id..'user:'..v)
   if user_info and user_info.username then
   local username = user_info.username
   text = text.."<b>|"..k.."|</b>~⪼(@"..username..")\n"
@@ -4138,7 +4138,7 @@ local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
    end
      end
 
-  if text:match("^اطردني$") then
+  if text:match("^هاامراطردني$") then
   if not database:get('tshake:'..bot_id..'kickme:mute'..msg.chat_id_) then
   redis:set('KENAE:'..bot_id..'kickyess'..msg.sender_user_id_..'', 'kickyes')
   redis:set('KENAE:'..bot_id..'kicknoo'..msg.sender_user_id_..'', 'kickno')
