@@ -4685,7 +4685,7 @@ end
   local KENAE_new_text = KENAE_new_text:gsub('#edit',(edit or 'لا يوجد'))
   local KENAE_new_text = KENAE_new_text:gsub('#msgs',(user_msgs or 'لا يوجد'))
   local KENAE_new_text = KENAE_new_text:gsub('#stast',(t or 'لا يوجد'))
-  sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,tshake_new_text,msg.id_,msg.id_.."")
+  sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,KENAE_new_text,msg.id_,msg.id_.."")
   end
   else
   if is_sudo(msg) then
@@ -4704,7 +4704,7 @@ end
   if not database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_) then 
   sendPhoto(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n  <b>"..edit.."</b>\n", 1, 'html')
   else 
-  local KENAE_new_text = database:get("tshake:gr:id:text:"..bot_id..msg.chat_id_)
+  local KENAE_new_text = database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_)
   local KENAE_new_text = KENAE_new_text:gsub('#username',(keko_info or 'لا يوجد'))
   local KENAE_new_text = KENAE_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
   local KENAE_new_text = KENAE_new_text:gsub('#edit',(edit or 'لا يوجد'))
@@ -4734,7 +4734,7 @@ end
   if not database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_) then 
   sendPhoto(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n  <b>"..edit.."</b>\n", 1, 'html')
   else 
-  local KENAE_new_text = database:get("tshake:gr:id:text:"..bot_id..msg.chat_id_)
+  local KENAE_new_text = database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_)
   local KENAE_new_text = KENAE_new_text:gsub('#username',(keko_info or 'لا يوجد'))
   local KENAE_new_text = KENAE_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
   local KENAE_new_text = KENAE_new_text:gsub('#edit',(edit or 'لا يوجد'))
@@ -4759,7 +4759,7 @@ end
   if not database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_) then 
   sendPhoto(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n  <b>"..edit.."</b>\n", 1, 'html')
   else 
-  local KENAE_new_text = database:get("tshake:gr:id:text:"..bot_id..msg.chat_id_)
+  local KENAE_new_text = database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_)
   local KENAE_new_text = KENAE_new_text:gsub('#username',(keko_info or 'لا يوجد'))
   local KENAE_new_text = KENAE_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
   local KENAE_new_text = KENAE_new_text:gsub('#edit',(edit or 'لا يوجد'))
