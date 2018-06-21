@@ -1810,8 +1810,7 @@ if is_mod(msg) then
 end 
   --         »»               Start Function Check Msg                       ««              --
 BY : KENAE 
-Channel Files : https://t.me/KENAE Files
-]]
+
 local function keko_KENAE (data)
 local msg = data.message_
 redis = (loadfile "./libs/redis.lua")()
