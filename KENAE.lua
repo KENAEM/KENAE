@@ -1809,9 +1809,6 @@ if is_mod(msg) then
   end 
 end 
   --         »»               Start Function Check Msg                       ««              --
-BY : KENAE 
-
-local function keko_KENAE (data)
 local msg = data.message_
 redis = (loadfile "./libs/redis.lua")()
 database = Redis.connect('127.0.0.1', 6379)
