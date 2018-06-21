@@ -4892,15 +4892,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   end
     end
 
-end
-return {
-	keko_KENAE = keko_KENAE ,
-}
---[[
-BY : KENAE 
-Channel Files : https://t.me/KENAE Files
-]] 
-  if  (text and text == 'تفعيل ردود المطور') and is_owner(msg) then
+ if  (text and text == 'تفعيل ردود المطور') and is_owner(msg) then
     if not database:get('KENAE:'..bot_id..'repsudo:mute'..msg.chat_id_) then
   send(msg.chat_id_, msg.id_, 1, '☑┇ردود المطور بالفعل تم تفعيلها', 1, 'md')
     else
