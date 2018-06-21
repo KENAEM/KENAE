@@ -1840,7 +1840,7 @@ end
 end
 if database:get("lock_chat:KENAE"..msg.chat_id_..bot_id) then
 delete_msg(msg.chat_id_,{[0] = msg.id_})
-return "Tshake"
+return "KENAE"
 end
 if text and text:match("(.*)(/)(.*)")  then
 if database:get("lock_sarha:KENAE"..msg.chat_id_..bot_id) then
@@ -4139,7 +4139,7 @@ local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
      end
 
   if text:match("^هاامراطردني$") then
-  if not database:get('tshake:'..bot_id..'kickme:mute'..msg.chat_id_) then
+  if not database:get('KENAE:'..bot_id..'kickme:mute'..msg.chat_id_) then
   redis:set('KENAE:'..bot_id..'kickyess'..msg.sender_user_id_..'', 'kickyes')
   redis:set('KENAE:'..bot_id..'kicknoo'..msg.sender_user_id_..'', 'kickno')
   send(msg.chat_id_, msg.id_, 1, '🚷┇ ارسل ؛ نعم ، ليتم طردك\n🔘┇ارسل ؛ لا ، لالغاء الامر', 1, 'md')
@@ -5477,7 +5477,7 @@ end
 end
 
 --[[
-  _  ________ _   _          ______
+ _  ________ _   _          ______
 | |/ /  ____| \ | |   /\   |  ____|
 | ' /| |__  |  \| |  /  \  | |__
 |  < |  __| | . ` | / /\ \ |  __|
