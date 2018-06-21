@@ -1804,6 +1804,7 @@ if is_mod(msg) then
   database:del("lock_link.note:KENAE"..msg.chat_id_..bot_id,"ok")
   end
   end
+if is_mod(msg) then
 local function keko_KENAE (data)
 local msg = data.message_
 redis = (loadfile "./libs/redis.lua")()
