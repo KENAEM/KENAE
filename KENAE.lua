@@ -1804,9 +1804,6 @@ if is_mod(msg) then
   database:del("lock_link.note:KENAE"..msg.chat_id_..bot_id,"ok")
   end
   end
-BY : KENAE 
-Channel Files : https://t.me/KENAE Files
-]]
 local function keko_KENAE (data)
 local msg = data.message_
 redis = (loadfile "./libs/redis.lua")()
