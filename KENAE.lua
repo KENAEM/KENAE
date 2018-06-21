@@ -2067,10 +2067,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
     database:set('KENAE :'..bot_id..'rep:mute'..msg.chat_id_,true)
   end
     end
-
-  end
-  end
-  end 
+ 
 --         »»               End KENAE unlock                       ««              --
   end 
 end 
