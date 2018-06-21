@@ -2107,18 +2107,9 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   send(msg.chat_id_, msg.id_, 1, '☑┇ردود البوت بالفعل تم تعطيلها', 1, 'md')
   else
   send(msg.chat_id_, msg.id_, 1, '☑┇تم تعطيل ردود البوت', 1, 'md')
-    database:set('KENAE :'..bot_id..'rep:mute'..msg.chat_id_,true)
+  database:set('KENAE :'..bot_id..'rep:mute'..msg.chat_id_,true)
   end
     end
-
-end
-return {
-	keko_KENAE = keko_KENAE ,
-}
---[[
-BY : KENAE 
-Channel Files : https://t.me/KENAE Files
-]]
 function TSCheckMsg(msg) 
 local text = msg.content_.text_
 local text = msg.content_.text_
