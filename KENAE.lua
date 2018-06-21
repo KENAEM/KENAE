@@ -2099,17 +2099,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   send(msg.chat_id_, msg.id_, 1, '☑┇تم تعطيل ردود البوت', 1, 'md')
     database:set('KENAE :'..bot_id..'rep:mute'..msg.chat_id_,true)
   end
-    end
-
-end
-return {
-	keko_KENAE = keko_KENAE ,
-}
---[[
-BY : KENAE 
-Channel Files : https://t.me/KENAE Files
-				
-				
+								
   end
   end
   end 
@@ -5206,9 +5196,8 @@ end
 💎┇م4 ~⪼ لعرض اوامر المطورين
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉]]
  send(msg.chat_id_, msg.id_, 1, (help or text), 1, 'md')
-   end
-
-  if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+  end
+ if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
   send(msg.chat_id_, msg.id_, 1, '📥┇الان يمكنك ارسال الكليشه  ليتم حفظها', 1, 'html')
   redis:set('KENAE:'..bot_id..'h11'..msg.sender_user_id_..'', 'msg')
     return false end
