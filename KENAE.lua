@@ -4757,7 +4757,7 @@ moody = "• اَٰنٍٰـﮧﮧيَٰ بٌِٰـوٍّ໑تّٰ💨🌝ֆ"
 send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
 end
 end
-end
+
 if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
     if not database:get('KENAE :'..bot_id..'rep:mute'..msg.chat_id_) then
   send(msg.chat_id_, msg.id_, 1, '☑┇ردود البوت بالفعل تم تفعيلها', 1, 'md')
@@ -4774,8 +4774,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
     database:set('KENAE :'..bot_id..'rep:mute'..msg.chat_id_,true)
   end
     end
-  ----------------------------------------------------------------------------------------------
- 
+  
   if (text and text == 'تفعيل الايدي بالصوره') and is_owner(msg) then
   if not database:get('KENAE:'..bot_id..'id:photo'..msg.chat_id_) then
     send(msg.chat_id_, msg.id_, 1, '☑┇الايدي بالصوره بالفعل تم تفعيله', 1, 'md')
