@@ -4925,7 +4925,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   if not database:get('KENAE:'..bot_id..'id:mute'..msg.chat_id_) then
   if not database:get('KENAE:'..bot_id..'id:photo'..msg.chat_id_) then
   if not database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_) then 
-  sendPhoto(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n  <b>"..edit.."</b>\n", 1, 'html')
+  send(msg.chat_id_, msg.id_, 1, "❕┇انت لا تملك صوره لحسابك\n🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n📧┇السحكات ~⪼ <b>{"..edit.."}</b>\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ", 1, 'html')
   else  
   local KENAE_new_text = database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_)
   local KENAE_new_text = KENAE_new_text:gsub('#username',(keko_info or 'لا يوجد'))
@@ -4950,7 +4950,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   t = 'عضو فقط'
   end
   if not database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_) then 
-  sendPhoto(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n  <b>"..edit.."</b>\n", 1, 'html')
+  send(msg.chat_id_, msg.id_, 1, "❕┇انت لا تملك صوره لحسابك\n🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n📧┇السحكات ~⪼ <b>{"..edit.."}</b>\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ", 1, 'html')
   else 
   local KENAE_new_text = database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_)
   local KENAE_new_text = KENAE_new_text:gsub('#username',(keko_info or 'لا يوجد'))
@@ -4980,7 +4980,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   if not database:get('KENAE:'..bot_id..'id:mute'..msg.chat_id_) then
   if not database:get('KENAE:'..bot_id..'id:photo'..msg.chat_id_) then
   if not database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_) then 
-  sendPhoto(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n  <b>"..edit.."</b>\n", 1, 'html')
+  send(msg.chat_id_, msg.id_, 1, "❕┇انت لا تملك صوره لحسابك\n🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n📧┇السحكات ~⪼ <b>{"..edit.."}</b>\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ", 1, 'html')
   else 
   local KENAE_new_text = database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_)
   local KENAE_new_text = KENAE_new_text:gsub('#username',(keko_info or 'لا يوجد'))
@@ -5005,7 +5005,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   t = 'عضو فقط'
   end
   if not database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_) then 
-  sendPhoto(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n  <b>"..edit.."</b>\n", 1, 'html')
+  send(msg.chat_id_, msg.id_, 1, "❕┇انت لا تملك صوره لحسابك\n🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n📧┇السحكات ~⪼ <b>{"..edit.."}</b>\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ", 1, 'html')
   else 
   local KENAE_new_text = database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_)
   local KENAE_new_text = KENAE_new_text:gsub('#username',(keko_info or 'لا يوجد'))
@@ -5503,7 +5503,7 @@ local chat = {}
 
 if (data.ID == "UpdateNewMessage") then
 local msg = data.message_
-local Data_Tshake = data
+local Data_KENAE = data
 --         »»                 Run KENAE                         ««              --
 if database:get('KENAE:'..bot_id.."charge:"..msg.chat_id_) then
 if (not is_mod(msg) and not is_vip(msg)) then 
