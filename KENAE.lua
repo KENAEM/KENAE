@@ -2102,14 +2102,6 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
     database:set('KENAE :'..bot_id..'rep:mute'..msg.chat_id_,true)
   end
     end
-
-end
-return {
-	keko_KENAE = keko_KENAE ,
-}
---[[
-BY : KENAE 
-Channel Files : https://t.me/KENAE Files
 function TSCheckMsg(msg) 
 local text = msg.content_.text_
 local text = msg.content_.text_
