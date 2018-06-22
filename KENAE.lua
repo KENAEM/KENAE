@@ -4870,7 +4870,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   send(msg.chat_id_, msg.id_, 1, '☑┇ردود المدير بالفعل تم تعطيلها', 1, 'md')
   else
   send(msg.chat_id_, msg.id_, 1, '☑┇تم تعطيل ردود المدير', 1, 'md')
-    database:set('KENAE:'..bot_id..'repowner:mute'..msg.chat_id_,true)
+  database:set('KENAE:'..bot_id..'repowner:mute'..msg.chat_id_,true)
   end
     end
     
@@ -5067,7 +5067,7 @@ end
    send(msg.chat_id_, msg.id_, 1, '☑┇التثبيت بالفعل تم تعطيله', 1, 'md')
    else
    send(msg.chat_id_, msg.id_, 1, '☑┇تم تعطيل التثبيت', 1, 'md')
-     database:set('KENAE:'..bot_id..'pin:mute'..msg.chat_id_,true)
+   database:set('KENAE:'..bot_id..'pin:mute'..msg.chat_id_,true)
    end
      end
 
