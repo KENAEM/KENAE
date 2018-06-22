@@ -1849,7 +1849,7 @@ var = true end if creator then var = true end
 for k,v in pairs(sudo_users) do
 if user_id == v then
 var = true
-end end
+end
 local keko_add_sudo = redis:get('KENAE :'..bot_id..'sudoo'..user_id..'')
 if keko_add_sudo then var = true end
 return var
@@ -1861,7 +1861,6 @@ if text == 'هلو' then
 moody = "• هَٰہۧـﮧﮧلْٰاَٰوٍّ໑اَٰتّٰ 🌝☄ֆ"
 send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
 end
-
 if text == 'كيناي' then
 moody = "• نٍٰـعٍِّـﮧﮧمٍٰ تّٰفِٰـہضلْٰ 🍁🌛ֆ"
 send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
@@ -2086,7 +2085,6 @@ if text == 'انتة منو' then
 moody = "• اَٰنٍٰـﮧﮧيَٰ بٌِٰـوٍّ໑تّٰ💨🌝ֆ"
 send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
 end
-
 end
 if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
     if not database:get('KENAE :'..bot_id..'rep:mute'..msg.chat_id_) then
