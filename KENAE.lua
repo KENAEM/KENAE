@@ -4196,7 +4196,7 @@ local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
     if text_sudo then
     send(msg.chat_id_, msg.id_, 1, text_sudo, 1, 'md')
     else
-    sendContact(msg.chat_id_, msg.id_, 0, 1, nil, (nkeko or +9647816856066), (nakeko or "KENAE"), "", bot_id)
+    sendContact(msg.chat_id_, msg.id_, 0, 1, nil, (nkeko or +9647819831695), (nakeko or "KENAE"), "", bot_id)
   end
    end
     for k,v in pairs(sudo_users) do
