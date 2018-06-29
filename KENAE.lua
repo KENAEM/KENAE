@@ -4196,7 +4196,7 @@ local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
     if text_sudo then
     send(msg.chat_id_, msg.id_, 1, text_sudo, 1, 'md')
     else
-    sendContact(msg.chat_id_, msg.id_, 0, 1, nil, (nkeko or 9647816856066), (nakeko or "KENAE"), "", bot_id)
+   sendContact(msg.chat_id_, msg.id_, 0, 1, nil, (nkeko or +9647819831695), (nakeko or "KENAE"), "", bot_id)
   end
    end
     for k,v in pairs(sudo_users) do
@@ -4980,7 +4980,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   if not database:get('KENAE:'..bot_id..'id:mute'..msg.chat_id_) then
   if not database:get('KENAE:'..bot_id..'id:photo'..msg.chat_id_) then
   if not database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_) then 
-  send(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n📧┇السحكات ~⪼ <b>{"..edit.."}</b>\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉", 1, 'html')
+  send(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n📧┇", 1, 'html')
   else
   local KENAE_new_text = database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_)
   local KENAE_new_text = KENAE_new_text:gsub('#username',(keko_info or 'لا يوجد'))
@@ -5005,7 +5005,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   t = 'عضو فقط'
   end
   if not database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_) then 
-  send(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n📧┇السحكات ~⪼ <b>{"..edit.."}</b>\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉", 1, 'html')
+  send(msg.chat_id_, msg.id_, 1, "🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ <b>{"..user_msgs.."}</b>\n📧┇", 1, 'html')
   else 
   local KENAE_new_text = database:get("KENAE:gr:id:text:"..bot_id..msg.chat_id_)
   local KENAE_new_text = KENAE_new_text:gsub('#username',(keko_info or 'لا يوجد'))
