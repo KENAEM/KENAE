@@ -881,7 +881,7 @@ link = "(لا يوجد)"
 end
 send(tostring((database:get("KENAE"..bot_id..":sudo:gr") or sudo_add)), 0, 1, "🔘┇قام بتفعيل مجموعه \n🎫┇ايدي المطور ~⪼ ("..msg.sender_user_id_..")\n📜┇معرف المطور ~⪼ @"..(result.username_ or "لا يوجد").."\n🌐┇معلومات المجموعه \n\n🎫┇ايدي المجموعه ~⪼ ("..msg.chat_id_..")\nⓂ️┇اسم المجموعه ~⪼ ("..k2.title_..")\n📎┇رابط المجموعه ~⪼ ["..link.."]" , 1, 'html')
 end
-openChat(msg.chat_id_,thsake_info2) 
+openChat(msg.chat_id_, KENAE_info2) 
 --
 if data.result.can_promote_members  then
 database:sadd('KENAE:'..bot_id..'owners:'..msg.chat_id_,msg.sender_user_id_)
@@ -1840,7 +1840,7 @@ end
 end
 if database:get("lock_chat:KENAE"..msg.chat_id_..bot_id) then
 delete_msg(msg.chat_id_,{[0] = msg.id_})
-return "Tshake"
+return "KENAE"
 end
 if text and text:match("(.*)(/)(.*)")  then
 if database:get("lock_sarha:KENAE"..msg.chat_id_..bot_id) then
@@ -4139,7 +4139,7 @@ local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
      end
 
   if text:match("^اطردني$") then
-  if not database:get('tshake:'..bot_id..'kickme:mute'..msg.chat_id_) then
+  if not database:get('KENAE:'..bot_id..'kickme:mute'..msg.chat_id_) then
   redis:set('KENAE:'..bot_id..'kickyess'..msg.sender_user_id_..'', 'kickyes')
   redis:set('KENAE:'..bot_id..'kicknoo'..msg.sender_user_id_..'', 'kickno')
   send(msg.chat_id_, msg.id_, 1, '🚷┇ ارسل ؛ نعم ، ليتم طردك\n🔘┇ارسل ؛ لا ، لالغاء الامر', 1, 'md')
@@ -4942,7 +4942,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   local KENAE_new_text = KENAE_new_text:gsub('#edit',(edit or 'لا يوجد'))
   local KENAE_new_text = KENAE_new_text:gsub('#msgs',(user_msgs or 'لا يوجد'))
   local KENAE_new_text = KENAE_new_text:gsub('#stast',(t or 'لا يوجد'))
-  sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,tshake_new_text,msg.id_,msg.id_.."")
+  sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,KENAE_new_text,msg.id_,msg.id_.."")
   end
   else
   if is_sudo(msg) then
