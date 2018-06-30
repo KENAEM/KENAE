@@ -5145,7 +5145,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   local help = redis:get('KENAE:'..bot_id..'help')
      local text =  
 [[🔎┇اهلا وسهلا لعرض اومر كيناي
- ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+   🔹➖🔸➖🔹➖➖🔹➖🔸➖🔹➖
 📘┇م1 ~⪼ لعرض اوامر الحمايه
 
 💎┇ م2 ~⪼ لعرض اوامر الادمنيه
@@ -5153,7 +5153,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
 💎┇م3 ~⪼ لعرض اوامر المدراء
 
 💎┇م4 ~⪼ لعرض اوامر المطورين
-  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉]]
+  🔹➖🔸➖🔹➖➖🔹➖🔸➖🔹➖]]
  send(msg.chat_id_, msg.id_, 1, (help or text), 1, 'md')
    end
 
@@ -5224,11 +5224,11 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   if text:match("^اعدادات التقيد$") and is_mod(msg) then
   local res = redis:get('KENAE:'..bot_id..'hres')
      local text =  [[🚸⁞ اوامر حمايه بالتقيد
-┓🔹➖🔸➖🔹➖➖🔹➖🔸➖🔹┏
+┓➖🔸➖🔹➖➖🔹➖🔸➖┏
 🚸ـ قفل ~⪼ الامر ~⪼ بالتقيد
 🚸ـ فتح ~⪼ الامر ~⪼ بالتقيد
-┛🔹➖🔸➖🔹➖➖🔹➖🔸➖🔹┗
-┓🔹➖🔸➖🔹➖➖🔹➖🔸➖🔹┏
+┛➖🔸➖🔹➖➖🔹➖🔸➖┗
+┓➖🔸➖🔹➖➖🔹➖🔸➖┏
 
 🔸 الروابط ⑅ المعرف 
 🔸 التاك ⑅ الشارحه 
@@ -5242,7 +5242,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
 🔸 تقيد ⑅ الغاء تقيد ⑅ المقيدين 
 • مسح المقيدين ⑅ اعدادات التقيد
 
-   🔹➖🔸➖🔹➖➖🔹➖🔸➖🔹]]
+   ➖🔸➖🔹➖➖🔹➖🔸➖]]
   send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'md')
      end
      if text:match("^م2$") and is_mod(msg) then
