@@ -1542,7 +1542,7 @@ if (text == "قفل التاك بالتقيد") then
   end
   end
   if (text == "قفل الدردشه بالتقيد") then
-  local tsX_o = database:get("lock_chat.note:tKENAE"..msg.chat_id_..bot_id)
+  local tsX_o = database:get("lock_chat.note:KENAE"..msg.chat_id_..bot_id)
   if tsX_o then
   tsX000("lock",msg,"👁‍🗨 ⫶ الدردشه بالتقيد ⌁ مقفول ✓")
   else
