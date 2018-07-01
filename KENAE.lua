@@ -3210,7 +3210,7 @@ end
     local list = database:smembers(hash)
     text = "👥┇قائمة الادمنيه ،\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
     for k,v in pairs(list) do
-    local user_info = database:hgetall('tshake:'..bot_id..'user:'..v)
+    local user_info = database:hgetall('KENAE:'..bot_id..'user:'..v)
   if user_info and user_info.username then
   local username = user_info.username
   text = text.."<b>|"..k.."|</b>~⪼(@"..username..")\n"
@@ -4928,7 +4928,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   local keko_text = {
  ' ياحلو مين الله جابك🤧',
   " غير صورتك 😪 ",
-  " تخليني♥️ ",
+  " هم انته ♥️ ",
   " طالع حلو ^_^ ",
   " ليش مغير صورتك 🤣 ",
   " منور 😚",
