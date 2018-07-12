@@ -5475,7 +5475,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
   local text = [[
  📮┇اهلا بك في سورس كيناي                     
   🔹➖🔸➖🔹➖➖🔹➖🔸
-`git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh`
+`git clone https://github.com/KENAEM/KENAE.git && cd KENAE && chmod +x install.sh && ./install.sh`
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ✅┇طريقة التنصيب،☢️
 🔹➖🔸➖🔹➖➖🔹➖🔸
