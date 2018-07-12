@@ -3409,7 +3409,7 @@ end
     resolve_username(ap[2],id_by_username)
   end
     
-  if text:match("^جلب صوره (%d+)$") and msg.reply_to_message_id_ == 0  then
+  if text:match("^جلب صوره (%d+)$") and msg.reply_to_message_id_ == 0 and not database:get('KENAE:'..bot_id..'get:photo'..msg.chat_id_) then
 local pronumb = {string.match(text, "^(جلب صوره) (%d+)$")}
 local ph = pronumb[2] - 1
   local function gpro(extra, result, success)
