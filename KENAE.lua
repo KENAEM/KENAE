@@ -2726,7 +2726,7 @@ tsX000("prore",msg,"☑┇بالفعل تم رفعه عضو مميز")
 	   tsX000(apba[2],msg,"☑┇تم حظره من المجموعه")
     end
   end
-    🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹----------unban🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹--------
+    ----------------------------------------------unban--------------------------------------------
      if text:match("^الغاء حظر$") and is_mod(msg) and msg.reply_to_message_id_ then
    function unban_by_reply(extra, result, success)
    local hash =  'KENAE:'..bot_id..'banned:'..msg.chat_id_
@@ -2844,7 +2844,7 @@ end
   end
     resolve_username(apbll[2],delall_by_username)
   end
-    🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹-----banall🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹--
+    -----------------------------------------banall--------------------------------------------------
   if text:match("^حظر عام$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) and msg.reply_to_message_id_ then
   function gban_by_reply(extra, result, success)
     local hash =  'KENAE:'..bot_id..'gbanned:'
@@ -3227,7 +3227,7 @@ end
   end
     send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
   end
-  🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹-----------
+  -----------------------------------------------
 
 
     if text:match("^الاعضاء المميزين") and is_owner(msg) then
@@ -3460,7 +3460,8 @@ local ph = pronumb[2] - 1
     send(msg.chat_id_, msg.id_, 1, '🔘┇ ليتم حفظ الرابط ارسل { وضع الرابط } لحفظ الرابط الجديد', 1, 'html')
       end
      end
-    🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹-----------
+      -----------------------------------------------
+
     if text:match("^تفعيل الترحيب$") and is_mod(msg) then
      send(msg.chat_id_, msg.id_, 1, '☑┇تم تفعيل الترحيب في المجموعه', 1, 'md')
        database:set('KENAE:'..bot_id.."welcome"..msg.chat_id_,true)
@@ -4415,22 +4416,22 @@ local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
      end
        send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
      end
-  🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹
-  if text:match("^ردود المطور$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add)  then
+    ------------------------------------ 
+    if text:match("^ردود المطور$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add)  then
     local list = redis:smembers('KENAE:'..bot_id..'kekoresudo')
     text = "📑┇قائمه ردود المطور\n🔹➖🔸➖🔹➖➖🔹➖🔸 \n"
     for k,v in pairs(list) do
-  text = text.."<b>|"..k.."|</b>~⪼("..v..")\n"
+    text = text.."<b>|"..k.."|</b>~⪼("..v..")\n"
      if #text > 7000 then
      send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
      text = ""
      end
     end
     if #list == 0 then
-  text = "❕┇لا يوجد ردود للمطور"
-  end
+   text = "❕┇لا يوجد ردود للمطور"
+   end
     send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
-  end
+    end
     if text:match("^ردود المدير$") and is_owner(msg) then
     local list = redis:smembers('KENAE:'..bot_id..'kekore'..msg.chat_id_..'')
     text = "📑┇قائمه ردود المدير\n🔹➖🔸➖🔹➖➖🔹➖🔸 \n"
@@ -4504,8 +4505,8 @@ end
   delete_msg(msg.chat_id_, {[0] = msg.reply_to_message_id_})
   delete_msg(msg.chat_id_, {[0] = msg.id_})
   end
-    🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹----------
-     if text:match('^تنظيف (%d+)$') and is_owner(msg) then
+     ----------------------------------------------------------------------------------------------
+    if text:match('^تنظيف (%d+)$') and is_owner(msg) then
     local matches = {string.match(text, "^(تنظيف) (%d+)$")}
      if msg.chat_id_:match("^-100") then
   if tonumber(matches[2]) > 100 or tonumber(matches[2]) < 1 then
@@ -4525,7 +4526,7 @@ end
   send(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
     end
   end
-  🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹----------
+  ---------------------------------------------------------------------
  if not database:get('KENAE :'..bot_id..'rep:mute'..msg.chat_id_) then
 if text == 'هلو' then
 moody = "• هَٰہۧـﮧﮧلْٰاَٰوٍّ໑اَٰتّٰ 🌝☄ֆ"
