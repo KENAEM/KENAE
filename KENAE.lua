@@ -2398,7 +2398,7 @@ local chat = chats[msg.chat_id_]
 if msg.date_ < (os.time() - 30) then
 return false end
   if text then
-  🔹➖🔸➖🔹🔹➖🔸➖🔹🔹➖🔸➖🔹-------
+  -------------------------------------------
   if msg and msg.send_state_.ID == "MessageIsSuccessfullySent" then
   function get_mymsg_contact(extra, result, success)
   end
