@@ -3395,8 +3395,7 @@ end
     end
      getMessage(msg.chat_id_, msg.reply_to_message_id_,id_by_reply)
     end
-    
-  if text:match("^ايدي @(.*)$") then
+   if text:match("^ايدي @(.*)$") then
     local ap = {string.match(text, "^(ايدي) @(.*)$")}
     function id_by_username(extra, result, success)
     if result.id_ then
@@ -3409,7 +3408,7 @@ end
     resolve_username(ap[2],id_by_username)
   end
     
-  if text:match("^جلب صوره (%d+)$") and msg.reply_to_message_id_ == 0  then
+  if text:match("^جلب صوره (%d+)$") and msg.reply_to_message_id_ == 0 and not database:get('KENAE:'..bot_id..'get:photo'..msg.chat_id_) then
 local pronumb = {string.match(text, "^(جلب صوره) (%d+)$")}
 local ph = pronumb[2] - 1
   local function gpro(extra, result, success)
@@ -3755,7 +3754,8 @@ end
    bot.channel_get_admins(msg.chat_id_,cb)
   end
        if text:match("^الاعدادات$") and is_mod(msg) then
-    if database:get("lock_media:KENAE"..msg.chat_id_..bot_id) then
+    if database:get("lock_media:KENAE"..msg.chat_id_..bot_id) then 
+
        mute_all = '✔┇'
        else
        mute_all = '✖┇'
