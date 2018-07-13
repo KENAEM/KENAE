@@ -3415,7 +3415,7 @@ local ph = pronumb[2] - 1
      if result.photos_[ph] then
   sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[ph].sizes_[1].photo_.persistent_id_)
      else
-  send(msg.chat_id_, msg.id_, 1, "❕┇لا تملك صوره رقم <b>{"..pronumb[2].."}</b> في حسابك", 1, 'html')
+ send(msg.chat_id_, msg.id_, 1, "❕┇لا تملك صوره رقم <b>{"..pronumb[2].."}</b> في حسابك", 1, 'html')
      end
 	 end
      tdcli_function ({
@@ -3432,7 +3432,7 @@ local ph = pronumb[2] - 1
   send(msg.chat_id_, msg.id_, 1, '🔘┇ضع التكرار من *{2}* الى  *{99999}*', 1, 'md')
     else
   database:set('KENAE:'..bot_id..'flood:max:'..msg.chat_id_,floodmax[2])
-  send(msg.chat_id_, msg.id_, 1, '☑┇تم  وضع التكرار بالطرد للعدد ~⪼  *{'..floodmax[2]..'}*', 1, 'md')
+  send(msg.chat_id_, msg.id_, 1, '☑️┇تم  وضع التكرار بالطرد للعدد ~⪼  *{'..floodmax[2]..'}*', 1, 'md')
     end
   end
     
@@ -3442,7 +3442,7 @@ local ph = pronumb[2] - 1
   send(msg.chat_id_, msg.id_, 1, '🔘┇ضع العدد من *{1}* الى  *{99999}*', 1, 'md')
     else
   database:set('KENAE:'..bot_id..'flood:time:'..msg.chat_id_,floodt[2])
-     send(msg.chat_id_, msg.id_, 1, '☑┇تم  وضع الزمن التكرار للعدد ~⪼  *{'..floodt[2]..'}*', 1, 'md')
+     send(msg.chat_id_, msg.id_, 1, '☑️┇تم  وضع الزمن التكرار للعدد ~⪼  *{'..floodt[2]..'}*', 1, 'md')
     end
     end
     
