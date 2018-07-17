@@ -5,15 +5,13 @@
 `git clone https://github.com/KENAEM/KENAE.git && cd KENAE && chmod +x install.sh && ./install.sh`
 
 
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+       
+ ./KENAE/ts    كود رن  
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-./KENAE/ts    كود رن         
- 
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 rm -rf *KENAE   كودحذف التنصيب
-
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-@KENAEAE    المطور                                                                                
 
-┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+
 @KENAETEAM    قناة السورس
