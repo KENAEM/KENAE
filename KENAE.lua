@@ -2135,7 +2135,6 @@ for i=1,#gps do
 database:del("KENAE:gog"..bot_id)
 database:del('KENAE:'..bot_id.."enable:"..gps[i])
 database:del( 'KENAE:'..bot_id.."charge:"..gps[i])
-end
 send(msg.chat_id_, msg.id_, 1, '🔌 تم تعطيل الكل ~⪼  *{'..#gps..'}*', 1, 'md')
 end
 if text:match("^مغادره الكل$") then
