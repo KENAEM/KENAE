@@ -2125,7 +2125,6 @@ for i=1,#gps do
 database:sadd("KENAE:gog"..bot_id, gps[i])
 database:set('KENAE:'..bot_id.."enable:"..gps[i],true)
 database:set( 'KENAE:'..bot_id.."charge:"..gps[i],true
-end
 send(msg.chat_id_, msg.id_, 1, '🔋┇تم تفعيل الكل ~⪼  *{'..(#gps - #gps2)..'}*', 1, 'md')
 end
 if text:match("^تعطيل الكل$") then
