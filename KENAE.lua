@@ -4828,12 +4828,12 @@ end
   🗯┇تفعيل الانلاين
   🗯┇تعطيل الانلاين
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-  📡┇Ch ~⪼ @KENAETEAM]]
-  send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
+  📡┇Ch ~⪼ @KENAETEAM ]]
+  send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'md')
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
-  local text =  [[
-  📮┇اهلا بك في سورس كيناي                     
+  local text = [[
+ 📮┇اهلا بك في سورس كيناي                     
   🔹➖🔸➖🔹➖➖🔹➖🔸
 `git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh`
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
@@ -5100,5 +5100,5 @@ end
 |  < |  __| | . ` | / /\ \ |  __|
 | . \| |____| |\  |/ ____ \| |____
 |_|\_\______|_| \_/_/    \_\______|
-           CH > @KENAETEAM
+           CH > @KENAETEAM                                                                                   
 --]]
