@@ -1,10 +1,11 @@
 --[[
- _____ ____  _   _    _    _  _______
-|_   _/ ___|| | | |  / \  | |/ / ____|
-  | | \___ \| |_| | / _ \ | ' /|  _|
-  | |  ___) |  _  |/ ___ \| . \| |___
-  |_| |____/|_| |_/_/   \_\_|\_\_____|
-              CH > @KENAETEAM
+ _  ________ _   _          ______
+| |/ /  ____| \ | |   /\   |  ____|
+| ' /| |__  |  \| |  /  \  | |__
+|  < |  __| | . ` | / /\ \ |  __|
+| . \| |____| |\  |/ ____ \| |____
+|_|\_\______|_| \_/_/    \_\______|
+           CH > @KENAETEAM
 --]]
 serpent = require('serpent')
 serp = require 'serpent'.block
@@ -397,7 +398,7 @@ local function send(chat_id, reply_to_message_id, disable_notification, text, di
   }
   local keko = "https://api.telegram.org/bot" ..token.. '/sendMessage?chat_id=' .. chat_id
   if reply_to_message_id ~= 0 then
-  keko = keko .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 -- جميع الحقوق محفوظه لفريق تشاكي لايمكنك نسخ او استخدام هذه السطر بدون موافقه الفريق
+  keko = keko .. '&reply_to_message_id=' .. reply_to_message_id/2097152/0.5 -- جميع الحقوق محفوظه لفريق كيناي لايمكنك نسخ او استخدام هذه السطر بدون موافقه الفريق
   end
   if disable_web_page_preview then
   keko = keko .. '&disable_web_page_preview=true'
@@ -1644,7 +1645,7 @@ send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
 os.execute('cd libs && wget https://raw.githubusercontent.com/KENAETEAM/KENAE/master/libs/utils.lua')
 os.execute('rm -rf KENAE.lua')
-os.execute('wget https://raw.githubusercontent.com/KENAETEAM/KENAE/master/KENAE.lua')
+os.execute('wget https://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua')
 os.exit()
 return false
 end
@@ -4468,26 +4469,33 @@ end
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
   local text =  [[
-  👋┇اهلا بك في سورس تشاكي 
-    
-  🌐┇<strong>KENAE TEAM</strong>
-    
-  🦁┇<a href="https://telegram.me/KENAETEAM">قناه السورس</a>
-  📜┇<a href="https://telegram.me/KENAE_DEV">قناه شروحات سورس</a>
-  📁┇<a href="https://telegram.me/KENAEfiles">قناه ملفات السورس</a>
-    
-  🔎┇<a href="https://t.me/KENAE_DEV/227">طريقه التنصيب</a>
-    
-  📮┇<a href="t.me/TSHELPBOT">لـ تواصل </a> 
-  ]]
-  send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
+  📮┇اهلا بك في سورس كيناي                     
+  🔹➖🔸➖🔹➖➖🔹➖🔸
+`git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh`
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
+✅┇طريقة التنصيب،☢️
+🔹➖🔸➖🔹➖➖🔹➖🔸
+» فقط أضغط على الكود ☝️ ليتم النسخ   
+» ثم الصقه بالترمنال وانتر تتنظر يتنصب 
+» بعدهہ‌‏آ يطـلب مـعلومـآت بآلترمـنآل .
+» تدخل مـعلومـآتگ مـن توگن وآيدي
+» ثم آنتر سـوف يعمـل آلبوت بسـگرين تلقآئيآ ...                                                   
+🔹➖🔸➖🔹➖➖🔹➖🔸     
+♻️┇كود الرن ~⪼ `./KENAE/ts`
+⚠️┇ كود الحذف ~⪼ `rm -rf *KENAE`
+🔹➖🔸➖🔹➖➖🔹➖🔸 
+🦁┇[مطور السورس](t.me/KenaiTEAM)               
+📮┇[قناة السورس](t.me/KENAETEAM)
+🔹➖🔸➖🔹➖➖🔹➖🔸
+]]
+ send(msg.chat_id_, msg.id_, 1, text, 1, 'id')
   end
 
   if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
   local text =  [[
   🗑┇رابط حذف التلي ، ⬇
   ‼┇احذف ولا ترجع عيش حياتك'
-  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+  🔹➖🔸➖🔹➖➖🔹➖🔸
   🔎┇<a href="https://telegram.org/deactivate">اضغط هنا للحذف الحساب" </a>
   ]]
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
@@ -4722,10 +4730,11 @@ end
 end
 
 --[[
-   _____    _        _    _    _____
-  |_   _|__| |__    / \  | | _| ____|
-    | |/ __| '_ \  / _ \ | |/ /  _|
-    | |\__ \ | | |/ ___ \|   <| |___
-    |_||___/_| |_/_/   \_\_|\_\_____|
-              CH > @KENAETEAM
+ _  ________ _   _          ______
+| |/ /  ____| \ | |   /\   |  ____|
+| ' /| |__  |  \| |  /  \  | |__
+|  < |  __| | . ` | / /\ \ |  __|
+| . \| |____| |\  |/ ____ \| |____
+|_|\_\______|_| \_/_/    \_\______|
+           CH > @KENAETEAM
 --]]
