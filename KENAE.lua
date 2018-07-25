@@ -4427,76 +4427,53 @@ local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
      end
     end
     if #list == 0 then
-  text = "❕┇لا يوجد ردود للمطور"
-  end
-    send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
-  end
-    if text:match("^ردود المدير$") and is_owner(msg) then
-    local list = redis:smembers('KENAE:'..bot_id..'kekore'..msg.chat_id_..'')
-    text = "📑┇قائمه ردود المدير\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
-    for k,v in pairs(list) do
-    text = text.."<b>|"..k.."|</b>~⪼("..v..")\n"
-     if #text > 7000 then
-     send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
-     text = ""
-     end
-    end
-    if #list == 0 then
   text = "❕┇لا يوجد ردود للمدير"
-  end
-    send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
-  end
-    
-      if text:match("^كرر (.*)$") and is_mod(msg) then
-    local txt = {string.match(text, "^(كرر) (.*)$")}
-     send(msg.chat_id_, msg.id_, 1, txt[2], 1, 'html')
-  end
-    
-      if text:match("^وضع قوانين (.*)$") and is_mod(msg) then
-    local txt = {string.match(text, "^(وضع قوانين) (.*)$")}
-    database:set('KENAE:'..bot_id..'rules'..msg.chat_id_, txt[2])
-     send(msg.chat_id_, msg.id_, 1, "✔┇تم وضع القوانين للمجموعه", 1, 'md')
-    end
-    
-      if  text:match("^القوانين$") then
-    local rules = database:get('KENAE:'..bot_id..'rules'..msg.chat_id_)
-    if rules then
-     send(msg.chat_id_, msg.id_, 1, '⚜┇قوانين المجموعه هي\n'..rules, 1, 'md')
-  else
-     send(msg.chat_id_, msg.id_, 1, '⚜┇لم يتم حفظ قوانين للمجموعه', 1, 'md')
-    end
-    end
-    
-      if text:match("^وضع اسم (.*)$") and is_mod(msg)  then
-    local txt = {string.match(text, "^(وضع اسم) (.*)$")}
-    changetitle(msg.chat_id_, txt[2])
-     send(msg.chat_id_, msg.id_, 1, '✔┇تم تحديث اسم المجموعه الى \n'..txt[2], 1, 'md')
-  end
-    
-
-    if text:match("^وضع صوره") and is_mod(msg) then
-  database:set('KENAE:'..bot_id..'setphoto'..msg.chat_id_..':'..msg.sender_user_id_,true)
-     send(msg.chat_id_, msg.id_, 1, '📥┇قم بارسال صوره الان', 1, 'md')
-  end
-
-    if  text:match("^مسح الصوره") and is_mod(msg) then
-  https.request('https://api.telegram.org/bot'..token..'/deleteChatPhoto?chat_id='..msg.chat_id_)
-     send(msg.chat_id_, msg.id_, 1, '🗑┇تم مسح الصوره', 1, 'md')
-  end
-
-         if text:match("^وضع وصف (.*)$") and is_mod(msg) then
-         local text = {string.match(text, "^(وضع وصف) (.*)$")}
-               bot.changeChannelAbout(msg.chat_id_,text[2])
-                    send(msg.chat_id_, msg.id_, 1, "✔┇تم وضع وصف للمجموعه", 1, 'md')
 end
-    
-    if  text:match("^الوقت$") and is_mod(msg) then
-  local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
-   if ex == -1 then
-      send(msg.chat_id_, msg.id_, 1, '🔘┇وقت المجموعه لا نهائي` ☑', 1, 'md')
-   else
-    local d = math.floor(ex / day ) + 1
-  send(msg.chat_id_, msg.id_, 1, "❕┇عدد ايام وقت المجموعه {"..d.."} يوم", 1, 'md')
+send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
+end
+
+if text:match("^كرر (.*)$") and is_mod(msg) then
+local txt = {string.match(text, "^(كرر) (.*)$")}
+send(msg.chat_id_, msg.id_, 1, txt[2], 1, 'html')
+end  
+if text:match("^وضع قوانين (.*)$") and is_mod(msg) then
+local txt = {string.match(text, "^(وضع قوانين) (.*)$")}
+database:set('KENAE:'..bot_id..'rules'..msg.chat_id_, txt[2])
+send(msg.chat_id_, msg.id_, 1, "✔┇تم وضع القوانين للمجموعه", 1, 'md')
+end
+if text:match("^القوانين$") then
+local rules = database:get('KENAE:'..bot_id..'rules'..msg.chat_id_)
+if rules then
+send(msg.chat_id_, msg.id_, 1, '⚜┇قوانين المجموعه هي\n'..rules, 1, 'md')
+else
+send(msg.chat_id_, msg.id_, 1, '⚜┇لم يتم حفظ قوانين للمجموعه', 1, 'md')
+end
+end  
+if text:match("^وضع اسم (.*)$") and is_mod(msg)  then
+local txt = {string.match(text, "^(وضع اسم) (.*)$")}
+changetitle(msg.chat_id_, txt[2])
+send(msg.chat_id_, msg.id_, 1, '✔┇تم تحديث اسم المجموعه الى \n'..txt[2], 1, 'md')
+end
+if text:match("^وضع صوره") and is_mod(msg) then
+database:set('KENAE:'..bot_id..'setphoto'..msg.chat_id_..':'..msg.sender_user_id_,true)
+send(msg.chat_id_, msg.id_, 1, '📥┇قم بارسال صوره الان', 1, 'md')
+end
+if text:match("^مسح الصوره") and is_mod(msg) then
+https.request('https://api.telegram.org/bot'..token..'/deleteChatPhoto?chat_id='..msg.chat_id_)
+send(msg.chat_id_, msg.id_, 1, '🗑┇تم مسح الصوره', 1, 'md')
+end
+if text:match("^وضع وصف (.*)$") and is_mod(msg) then
+local text = {string.match(text, "^(وضع وصف) (.*)$")}
+bot.changeChannelAbout(msg.chat_id_,text[2])
+send(msg.chat_id_, msg.id_, 1, "✔┇تم وضع وصف للمجموعه", 1, 'md')
+end  
+if text:match("^الوقت$") and is_mod(msg) then
+local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
+if ex == -1 then
+send(msg.chat_id_, msg.id_, 1, '🔘┇وقت المجموعه لا نهائي` ☑', 1, 'md')
+else
+local d = math.floor(ex / day ) + 1
+send(msg.chat_id_, msg.id_, 1, "❕┇عدد ايام وقت المجموعه {"..d.."} يوم", 1, 'md')
    end
   end
     
