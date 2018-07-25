@@ -4419,7 +4419,6 @@ text = "✖┇لايوجد مطورين"
 end
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
-------------------------------------
 if text:match("^ردود المطور$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add)  then
 local list = redis:smembers('KENAE:'..bot_id..'kekoresudo')
 text = "📑┇قائمه ردود المطور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
@@ -5628,26 +5627,23 @@ local text =  [[
 ]]
  send(msg.chat_id_, msg.id_, 1, text, 1, 'id')
   end
-
-  if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
-  local text =  [[
-  🗑┇رابط حذف التلي ، ⬇
-  ‼┇احذف ولا ترجع عيش حياتك'
-  🔹➖🔸➖🔹➖➖🔹➖🔸
-  🔎┇<a href="https://telegram.org/deactivate">اضغط هنا للحذف الحساب" </a>
-  ]]
+if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
+local text =  [[
+🗑┇رابط حذف التلي ، ⬇
+‼┇احذف ولا ترجع عيش حياتك'
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
+🔎┇<a href="https://telegram.org/deactivate">اضغط هنا للحذف الحساب" </a>
+]]
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
 end
 end
-
 function tdcli_update_callback(data)
 local chat = {}
-
 if (data.ID == "UpdateNewMessage") then
-local msg = data.message_
 local Data_KENAE = data
---         »»                 Run KENAE                         ««              --
+msg = data.message_
+text = msg.content_.text_
 if database:get('KENAE:'..bot_id.."charge:"..msg.chat_id_) then
 if (not is_mod(msg) and not is_vip(msg)) then 
 print("»» is member "..msg.sender_user_id_) 
@@ -5655,8 +5651,196 @@ if is_muted(msg.sender_user_id_, msg.chat_id_) then
 delete_msg(msg.chat_id_,{[0] = msg.id_})
 return "KENAE"
 end
-TSCheckMsg(msg) 
+z_KENAE = TSCheckMsg(msg)
+if z_KENAE and z_KENAE == "stop" then 
+if database:get("lock_lllll:KENAE"..msg.chat_id_..bot_id) then
+local hash = 'flood:max:'..bot_id..msg.chat_id_
+if not database:get(hash) then
+floodMax = 10
+else
+floodMax = tonumber(database:get(hash))
 end
+local hash = 'KENAE:'..bot_id..'flood:time:'..msg.chat_id_
+if not database:get(hash) then
+floodTime = 1
+else
+floodTime = tonumber(database:get(hash))
+end
+if not is_vip(msg) then
+if bot_id then
+if not is_vip(msg) then
+local hash = 'flood:'..msg.sender_user_id_..':'..msg.chat_id_..':msg-num'
+local msgs = tonumber(database:get(hash) or 0)
+if msgs > (floodMax - 1) then
+local user = msg.sender_user_id_
+local chat = msg.chat_id_
+local channel = msg.chat_id_
+local user_id = msg.sender_user_id_
+local banned = is_banned(user_id, msg.chat_id_)
+if banned then
+else
+local id = msg.id_
+local msgs = {[0] = id}
+local chat = msg.chat_id_
+user_id = msg.sender_user_id_
+o = database:get("tsahke:spam:lock:"..os.date("%x")..bot_id..msg.chat_id_)
+if (o and (tonumber(o) >= 5)) then
+database:set("lock_media:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_audeo:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_video:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_photo:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_stecker:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_voice:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_gif:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_note:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_word:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_mark:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_link:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set("lock_new:KENAE"..msg.chat_id_..bot_id,"ok")
+database:set('KENAE:'..bot_id..'get:photo'..msg.chat_id_,true)
+send(msg.chat_id_, 0, 1, '⚠️┇تم كشف عمليه تخريب في المجموعة \n‼️┇وتم قفل الميديا وسيتم طرد جميع الاشخاص الذين يقومون بعمل تكرار', 1, 'md')
+else
+send(msg.chat_id_, msg.id_, 1, '🎫┇الايدي ~⪼*('..msg.sender_user_id_..')* \n❕┇قمت بعمل تكرار للرسائل المحدده\n☑┇وتم كتمك في المجموعه\n', 1, 'md')
+end 
+if (o and (tonumber(o) > 5)) then
+chat_kick(msg.chat_id_, msg.sender_user_id_)
+end
+database:incr("tsahke:spam:lock:"..os.date("%x")..bot_id..msg.chat_id_)
+database:sadd('KENAE:'..bot_id..'muted:'..msg.chat_id_, msg.sender_user_id_)
+end
+end
+database:setex(hash, floodTime, msgs+1)
+end
+end
+end
+end
+return "KENAE"
+end
+end
+if data.message_.content_.text_ then   
+if database:get("KENAE:edit:text:su:new2:"..bot_id..data.message_.chat_id_..data.message_.content_.text_) then
+local KENAE_edit_text = database:get("KENAE:edit:text:su:new2:"..bot_id..data.message_.chat_id_..data.message_.content_.text_)
+if KENAE_edit_text then
+data.message_.content_.text_ = KENAE_edit_text
+end
+end
+end
+local msg = data.message_
+text = msg.content_.text_
+if is_sudo(msg) then 
+if database:get("KENAE:set_if_bc_new:"..bot_id..msg.sender_user_id_) then 
+database:del("KENAE:set_if_bc_new:"..bot_id..msg.sender_user_id_)
+local pro = database:scard('KENAE:'..bot_id..'pro:groups') or 0
+if text then 
+local gpss = database:smembers( 'KENAE:'..bot_id.."groups") or 0
+for i=1, #gpss do
+if not database:sismember('KENAE:'..bot_id..'pro:groups', gpss[i]) then
+send(gpss[i], 0, 1, text, 1, 'html')		
+end					
+end
+end
+if (data.message_.content_.sticker_) then 
+gpss = database:smembers( 'KENAE:'..bot_id.."groups") or 0
+for i=1, #gpss do
+if not database:sismember('KENAE:'..bot_id..'pro:groups', gpss[i]) then
+tdcli.sendSticker(gpss[i], 0,0, 1, nil, data.message_.content_.sticker_.sticker_.persistent_id_)
+end
+end
+elseif (data.message_.content_.voice_) then 
+gpss = database:smembers( 'KENAE:'..bot_id.."groups") or 0
+for i=1, #gpss do
+if not database:sismember('KENAE:'..bot_id..'pro:groups', gpss[i]) then
+tdcli.sendVoice(gpss[i], 0,0, 1, nil, data.message_.content_.voice_.voice_.persistent_id_)
+end
+end
+elseif (data.message_.content_.video_) then 
+gpss = database:smembers( 'KENAE:'..bot_id.."groups") or 0
+for i=1, #gpss do
+if not database:sismember('KENAE:'..bot_id..'pro:groups', gpss[i]) then
+tdcli.sendVideo(gpss[i], 0,0, 1, nil, data.message_.content_.video_.video_.persistent_id_)
+end
+end
+elseif (data.message_.content_.animation_) then 
+gpss = database:smembers( 'KENAE:'..bot_id.."groups") or 0
+for i=1, #gpss do
+if not database:sismember('KENAE:'..bot_id..'pro:groups', gpss[i]) then
+tdcli.sendDocument(gpss[i], 0,0, 1, nil, data.message_.content_.animation_.animation_.persistent_id_)
+end
+end
+elseif (data.message_.content_.document_) then
+gpss = database:smembers( 'KENAE:'..bot_id.."groups") or 0
+for i=1, #gpss do
+if not database:sismember('KENAE:'..bot_id..'pro:groups', gpss[i]) then
+tdcli.sendDocument(gpss[i], 0,0, 1, nil, data.message_.content_.document_.document_.persistent_id_)
+end
+end
+elseif (data.message_.content_.photo_) then
+local id_keko = nil
+if data.message_.content_.photo_.sizes_[0] then
+id_keko = data.message_.content_.photo_.sizes_[0].photo_.persistent_id_
+end
+if data.message_.content_.photo_.sizes_[1] then
+id_keko = data.message_.content_.photo_.sizes_[1].photo_.persistent_id_
+end
+if data.message_.content_.photo_.sizes_[2] then
+id_keko = data.message_.content_.photo_.sizes_[2].photo_.persistent_id_
+end	
+if data.message_.content_.photo_.sizes_[3] then
+id_keko = data.message_.content_.photo_.sizes_[3].photo_.persistent_id_
+end
+gpss = database:smembers( 'KENAE:'..bot_id.."groups") or 0
+for i=1, #gpss do
+if not database:sismember('KENAE:'..bot_id..'pro:groups', gpss[i]) then
+tdcli.sendPhoto(gpss[i], 0, 0, 1, nil, id_keko,(msg.content_.caption_ or " "))
+end					
+end
+end
+gpss = database:smembers( 'KENAE:'..bot_id.."groups") or 0
+send(msg.chat_id_, msg.id_, 1, '☑┇تم نشر الرساله في {'..(#gpss - pro)..'} مجموعه ', 1, 'md')
+end
+end
+local keko1 = redis:get('KENAE:'..bot_id..'keko1'..msg.sender_user_id_..''..msg.chat_id_..'')
+if keko1 == 're' then
+local keko2 = redis:get('KENAE:'..bot_id..'msg'..msg.sender_user_id_..''..msg.chat_id_..'')
+if text then 
+redis:set('KENAE:'..bot_id..'keko'..keko2..''..msg.chat_id_..'', text)
+elseif (data.message_.content_.sticker_) then 
+redis:set('KENAE:'..bot_id..':sticker:'..keko2..''..msg.chat_id_..'', data.message_.content_.sticker_.sticker_.persistent_id_)
+elseif (data.message_.content_.voice_) then 
+redis:set('KENAE:'..bot_id..':voice:'..keko2..''..msg.chat_id_..'', data.message_.content_.voice_.voice_.persistent_id_)
+elseif (data.message_.content_.video_) then 
+redis:set('KENAE:'..bot_id..':video:'..keko2..''..msg.chat_id_..'', data.message_.content_.video_.video_.persistent_id_)
+elseif (data.message_.content_.animation_) then 
+redis:set('KENAE:'..bot_id..':gif:'..keko2..''..msg.chat_id_..'', data.message_.content_.animation_.animation_.persistent_id_)
+elseif (data.message_.content_.document_) then
+redis:set('KENAE:'..bot_id..':file:'..keko2..''..msg.chat_id_..'', data.message_.content_.document_.document_.persistent_id_)
+else
+end -- end if text 
+redis:sadd('KENAE:'..bot_id..'kekore'..msg.chat_id_..'', keko2)
+send(msg.chat_id_, msg.id_, 1, "☑┇تم حفظ الرد", 1, 'md')
+redis:set('KENAE:'..bot_id..'keko1'..msg.sender_user_id_..''..msg.chat_id_..'', 'no')
+end
+local keko1 = redis:get('KENAE:'..bot_id..'keko1'..msg.sender_user_id_..'')
+if keko1 == 're' then
+local keko2 = redis:get('KENAE:'..bot_id..'msg'..msg.sender_user_id_..'')
+if text then 
+redis:set('KENAE:'..bot_id..'keko'..keko2..'', text)
+elseif (msg.content_.sticker_) then 
+redis:set('KENAE:'..bot_id..':sticker:'..keko2, msg.content_.sticker_.sticker_.persistent_id_)
+elseif (msg.content_.voice_) then 
+redis:set('KENAE:'..bot_id..':voice:'..keko2, msg.content_.voice_.voice_.persistent_id_)
+elseif (msg.content_.video_) then 
+redis:set('KENAE:'..bot_id..':video:'..keko2, msg.content_.video_.video_.persistent_id_)
+elseif (msg..content_.animation_) then 
+redis:set('KENAE:'..bot_id..':gif:'..keko2, data.message_.content_.animation_.animation_.persistent_id_)
+elseif (msg.content_.document_) then
+redis:set('KENAE:'..bot_id..':file:'..keko2, msg.content_.document_.document_.persistent_id_)
+end
+redis:sadd('KENAE:'..bot_id..'kekoresudo', keko2)
+send(msg.chat_id_, msg.id_, 1, "☑┇تم حفظ الرد", 1, 'md')
+redis:set('KENAE:'..bot_id..'keko1'..msg.sender_user_id_..'', 'no')
+end
+--         »»                 Run KENAE                         ««              --
 if is_mod(msg) then TSlocks(msg) print("\27[1;34m»» is mod "..msg.sender_user_id_.."\27[m") end
 TSall(msg,data)
 function check_username(extra,result,success)
@@ -5750,7 +5934,21 @@ function get_msg_contact(extra, result, success)
 local text = (result.content_.text_ or result.content_.caption_)
 local msgg = result 
 database:incr('KENAE:'..bot_id..'user:editmsg'..msgg.chat_id_..':'..msgg.sender_user_id_)
-if not is_vip(msgg) then
+if (not is_vip(msgg) and not text) then 
+if database:get("KENAE:lo:edit:new:"..bot_id..msgg.chat_id_) then 
+msgs = {[0] = data.message_id_}
+delete_msg(msg.chat_id_,msgs)
+end
+end
+if (result.content_.caption_ and not is_vip(msgg)) then 
+if (result.content_.caption_:match("(.*)@(.*)") or result.content_.caption_:match("@")) then 
+if database:get("lock_username:KENAE"..msg.chat_id_..bot_id) then
+local msgs = {[0] = data.message_id_}
+delete_msg(msg.chat_id_,msgs) 
+end 
+end 
+end
+if (not is_vip(msgg) and text) then
 check_filter_words(result, text)
 if text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or
 text:match("[Tt].[Mm][Ee]") or text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or
@@ -5794,7 +5992,7 @@ end end end end end
 if result.id_ and result.content_.text_ then
 if not is_vip(msgg) then
 check_filter_words(result, text)
-if text:match("@") then
+if text:match("(.*)(@)(.*)") then
 if database:get("lock_username:KENAE"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end
@@ -5874,5 +6072,5 @@ end
 |  < |  __| | . ` | / /\ \ |  __|
 | . \| |____| |\  |/ ____ \| |____
 |_|\_\______|_| \_/_/    \_\______|
-  CH > @KENAETEAM 
- --]]
+           CH > @KENAETEAM                                                                                   
+--]]
