@@ -1,13 +1,12 @@
-[[
+--[[
  _  ________ _   _          ______
 | |/ /  ____| \ | |   /\   |  ____|
 | ' /| |__  |  \| |  /  \  | |__
 |  < |  __| | . ` | / /\ \ |  __|
 | . \| |____| |\  |/ ____ \| |____
 |_|\_\______|_| \_/_/    \_\______|
-           CH > @KENAETEAM                                                                                 
+           CH > @KENAETEAM                                                                                   
 --]]
---------------------------------------
 serpent = require('serpent')
 serp = require 'serpent'.block
 https = require("ssl.https")
@@ -29,7 +28,6 @@ bot_idkeko = {string.match(token, "^(%d+)(:)(.*)")}
 bot_id = tonumber(bot_idkeko[1])
 sudo_users = {sudo_add,bot_id}
 URL33 = require('socket.url')
-tdcli=dofile('./libs/utils.lua')
 ---------- {Show Files} -----------
 red = '\27[31m' reset = '\27[m' Blue = "\27[34m" Green = "\27[32m"
 local files_KENAE = database:smembers("files"..bot_id) 
