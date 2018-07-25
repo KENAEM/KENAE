@@ -4121,7 +4121,7 @@ local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
    send(msg.chat_id_, msg.id_, 1, TXT, 1, 'md')
     end
     
- if (text and text == 'تفعيل اطردني') and is_owner(msg) then
+if (text and text == 'تفعيل اطردني') and is_owner(msg) then
 if not database:get('KENAE:'..bot_id..'kickme:mute'..msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '☑┇امر اطردني بالفعل تم تفعيله', 1, 'md')
 else
