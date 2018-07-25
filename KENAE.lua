@@ -4416,18 +4416,33 @@ local ex = database:ttl( 'KENAE:'..bot_id.."charge:"..msg.chat_id_)
        send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
      end
   ------------------------------------
-  if text:match("^ردود المطور$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add)  then
-    local list = redis:smembers('KENAE:'..bot_id..'kekoresudo')
-    text = "📑┇قائمه ردود المطور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
-    for k,v in pairs(list) do
-  text = text.."<b>|"..k.."|</b>~⪼("..v..")\n"
-     if #text > 7000 then
-     send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
-     text = ""
-     end
-    end
-    if #list == 0 then
-  text = "❕┇لا يوجد ردود للمدير"
+ if text:match("^ردود المطور$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add)  then
+local list = redis:smembers('KENAE:'..bot_id..'kekoresudo')
+text = "📑┇قائمه ردود المطور\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
+for k,v in pairs(list) do
+text = text.."<b>|"..k.."|</b>~⪼("..v..")\n"
+if #text > 7000 then
+send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
+text = ""
+end
+end
+if #list == 0 then
+text = "❕┇لا يوجد ردود للمطور"
+end
+send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
+end
+if text:match("^ردود المدير$") and is_owner(msg) then
+local list = redis:smembers('KENAE:'..bot_id..'kekore'..msg.chat_id_..'')
+text = "📑┇قائمه ردود المدير\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
+for k,v in pairs(list) do
+text = text.."<b>|"..k.."|</b>~⪼("..v..")\n"
+if #text > 7000 then
+send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
+text = ""
+end
+end
+if #list == 0 then
+text = "❕┇لا يوجد ردود للمدير"
 end
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
@@ -4474,34 +4489,33 @@ send(msg.chat_id_, msg.id_, 1, '🔘┇وقت المجموعه لا نهائي` 
 else
 local d = math.floor(ex / day ) + 1
 send(msg.chat_id_, msg.id_, 1, "❕┇عدد ايام وقت المجموعه {"..d.."} يوم", 1, 'md')
-   end
-  end
-    
-  if text:match("^مسح$") and msg.reply_to_message_id_ ~= 0 and is_mod(msg) then
-  delete_msg(msg.chat_id_, {[0] = msg.reply_to_message_id_})
-  delete_msg(msg.chat_id_, {[0] = msg.id_})
-  end
-    ----------------------------------------------------------------------------------------------
-     if text:match('^تنظيف (%d+)$') and is_owner(msg) then
-    local matches = {string.match(text, "^(تنظيف) (%d+)$")}
-     if msg.chat_id_:match("^-100") then
-  if tonumber(matches[2]) > 100 or tonumber(matches[2]) < 1 then
-  pm = '❕┇لا تستطيع حذف اكثر من 100 رساله'
-  send(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
-    else
-  tdcli_function ({
-  ID = "GetChatHistory",
-   chat_id_ = msg.chat_id_,
-  from_message_id_ = 0,
-     offset_ = 0,
-  limit_ = tonumber(matches[2])}, delmsg, nil)
-  pm ='☑┇تم <b>{'..matches[2]..'}</b> من الرسائل\n🗑┇حذفها'
-  send(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
-   end
-    else pm ='❕┇هناك خطاء'
-  send(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
-    end
-  end
+end
+end  
+if text:match("^مسح$") and msg.reply_to_message_id_ ~= 0 and is_mod(msg) then
+delete_msg(msg.chat_id_, {[0] = msg.reply_to_message_id_})
+delete_msg(msg.chat_id_, {[0] = msg.id_})
+end
+----------------------------------------------------------------------------------------------
+if text:match('^تنظيف (%d+)$') and is_owner(msg) then
+local matches = {string.match(text, "^(تنظيف) (%d+)$")}
+if msg.chat_id_:match("^-100") then
+if tonumber(matches[2]) > 100 or tonumber(matches[2]) < 1 then
+pm = '❕┇لا تستطيع حذف اكثر من 100 رساله'
+send(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
+else
+tdcli_function ({
+ID = "GetChatHistory",
+chat_id_ = msg.chat_id_,
+from_message_id_ = 0,
+offset_ = 0,
+limit_ = tonumber(matches[2])}, delmsg, nil)
+pm ='☑┇تم <b>{'..matches[2]..'}</b> من الرسائل\n🗑┇حذفها'
+send(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
+end
+else pm ='❕┇هناك خطاء'
+send(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
+end
+end
   ----------------------------------------------------------------------------------------------
  if not database:get('KENAE :'..bot_id..'rep:mute'..msg.chat_id_) then
 if text == 'هلو' then
