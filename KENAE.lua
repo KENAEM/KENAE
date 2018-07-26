@@ -5801,7 +5801,7 @@ end
 if (o and (tonumber(o) > 5)) then
 chat_kick(msg.chat_id_, msg.sender_user_id_)
 end
-database:incr("tsahke:spam:lock:"..os.date("%x")..bot_id..msg.chat_id_)
+database:incr("KENAE:spam:lock:"..os.date("%x")..bot_id..msg.chat_id_)
 database:sadd('KENAE:'..bot_id..'muted:'..msg.chat_id_, msg.sender_user_id_)
 end
 end
