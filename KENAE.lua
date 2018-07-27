@@ -5153,7 +5153,9 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
 💎┇م3 ~⪼ لعرض اوامر المدراء
 
 💎┇م4 ~⪼ لعرض اوامر المطورين
-   🔸➖🔹➖➖🔹➖🔸➖🔹]]
+
+💎┇م5 ~⪼ لعرض اوامر التقييد		
+    🔸➖🔹➖➖🔹➖🔸➖🔹]]
  send(msg.chat_id_, msg.id_, 1, (help or text), 1, 'md')
    end
 
@@ -5221,7 +5223,7 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
    send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
      return false end
     end
-  if text:match("^اعدادات التقيد$") and is_mod(msg) then
+  if text:match("^م5$") and is_mod(msg) then
   local res = redis:get('KENAE:'..bot_id..'hres')
      local text =  [[🚸⁞ اوامر حمايه بالتقيد
 ┓🔸➖🔹➖➖🔹➖🔸┏
