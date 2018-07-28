@@ -5616,7 +5616,6 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
 end
-end
 
 function tdcli_update_callback(data)
 local chat = {}
