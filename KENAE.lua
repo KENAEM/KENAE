@@ -4526,236 +4526,236 @@ end
     end
   end
   ----------------------------------------------------------------------------------------------
- if not database:get('KENAE :'..bot_id..'rep:mute'..msg.chat_id_) then
-if text == 'هلو' then
-moody = "• هَٰہۧـﮧﮧلْٰاَٰوٍّ໑اَٰتّٰ 🌝☄ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
+ if not database:get('KENAE:'..bot_id..'rep:mute'..msg.chat_id_) then 
+if text == 'هلو' then 
+moody = " هٰـہٰٖلـہٰٖاٰوٰاٰتٰـہٰٖ ًّ•|•🌝🌸✨:)" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
 
-if text == 'كيناي' then
-moody = "• نٍٰـعٍِّـﮧﮧمٍٰ تّٰفِٰـہضلْٰ 🍁🌛ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'شلونكم' then
-moody = "• تّٰمٍٰـﮧاَٰمٍٰ وٍّاَٰنٍٰتّٰـہهَٰہۧ 😽⚡️ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'شلونك' then
-moody = "• اَٰلْٰـحٌٰمٍٰـﮧﮧدِٰاَٰلْٰلْٰهَٰہۧ وٍّ୭اَٰنٍٰتّٰـهَٰہۧ 😼💛ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'تمام' then
-moody = "• دِٰوٍّ൭مٍٰ يَٰـﮧﮧاَٰرِٰبٌِٰ 😻🌪ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'هلاو' then
-moody = "• هَٰہۧـہ୪وٍّ୭اَٰتّٰ حٌٰبٌِٰـﮧيَٰ 🤗🌟ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '😐' then
-moody = "• شَُـبٌِٰيَٰـكٍٰ صُِـﮧﮧاَٰفِٰنٍٰ عٍِّ خّٰاَٰلْٰتّٰـہكٍٰ😹🖤ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'هاي' then
-moody = "• هَٰہۧـاَٰيَٰـﮧﮧاَٰتّٰ يَٰـرِٰوٍّحٌٰـہيَٰ 🙋🏼‍♂💙ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'بوت' then
-moody = "• تّٰفِٰـضـﮧلْٰ حٌٰبٌِٰـہيَٰ 🌚💫ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'اريد اكبل' then
-moody = "• شَُـوٍّ໑فِٰلْٰيَٰ وٍّيَٰـاَٰكٍٰ حٌٰدِٰيَٰـہقٍٰهَٰہۧ وٍّدِٰاَٰيَٰـﮧحٌٰ رِٰسٌٍمٍٰـہيَٰ😾😹💜ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'لتزحف' then
-moody = "• دِٰعٍِّـوٍّ໑فِٰهَٰہۧ زًَاَٰحٌٰـﮧفِٰ عٍِّ خّٰاَٰلْٰـتّٰكٍٰ خّٰـلْٰيَٰ يَٰسٌٍـہتّٰفِٰاَٰدِٰ😾🌈ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'كلخرا' then
-moody = "• خّٰـﮧرِٰاَٰ يَٰتّٰـہرِٰسٌٍ حٌٰلْٰكٍٰـﮧكٍٰ يَٰاَٰخّٰـﮧرِٰاَٰاَٰ💩ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'زاحف' then
-moody = "• زًَاَٰحٌٰـﮧفِٰ عٍِّ اَٰخّٰتّٰـﮧكٍٰ؟ كٍٰضيَٰـﮧتّٰ عٍِّمٍٰرِٰكٍٰ جًِّرِٰجًِّـﮧفِٰ😾😹ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'دي' then
-moody = "• خّٰلْٰيَٰنٍٰـﮧيَٰ اَٰحٌٰبٌِٰـﮧكٍٰ 😾ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'فرخ' then
-moody = "• وٍّيَٰنٍٰـﮧهَٰہۧ؟ خّٰ اَٰحٌٰضـﮧرِٰهَٰہۧ 😾😹ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'تعالي خاص' then
-moody = "• اَٰهَٰہۧـﮧوٍّ໑ ضـﮧلْٰ ضـﮧلْٰ سٌٍـﮧاَٰحٌٰفِٰ كٍٰبٌِٰـﮧرِٰ طَُِمٍٰـہكٍٰ😗😂💚ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'اكرهك' then
-moody = "•دِٰيَٰلْٰـﮧهَٰہۧ شَُـﮧوٍّ୭نٍٰ اَٰطَُِيَٰـقٍٰكٍٰ نٍٰـيَٰ 🙎🏼‍♂🖤ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'احبك' then
-moody = "•حٌٰبٌِٰيَٰبٌِٰـﮧيَٰ وٍّنٍٰـﮧيَٰ هَٰہۧــمٍٰ😻👅ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'باي' then
-moody = "• وٍّيَٰـﮧنٍٰ رِٰاَٰيَٰـہحٌٰ خّٰلْٰيَٰنٍٰـﮧهَٰہۧ مٍٰتّٰوٍّنٍٰسٌٍيَٰـﮧنٍٰ🙁💔ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'واكف' then
-moody = "• بٌِٰنٍٰلْٰخّٰـﮧرِٰاَٰ وٍّيَٰـﮧنٍٰ وٍّاَٰكٍٰـﮧفِٰ😐😒ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'وين المدير' then
-moody = "• لْٰيَٰـﮧشَُ شَُتّٰـﮧرِٰيَٰدِٰ🤔ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'انجب' then
-moody = "• صُِـﮧاَٰرِٰ سٌٍتّٰـﮧاَٰدِٰيَٰ🐸❤️ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'تحبني' then
-moody = "• مٍٰـﮧاَٰدِٰرِٰيَٰ اَٰفِٰكٍٰـﮧرِٰ🙁😹ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '🌚' then
-moody = "• فِٰـﮧدِٰيَٰتّٰ صُِخّٰـﮧاَٰمٍٰكٍٰ🙊👄ֆ "
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '🙄' then
-moody = "• نٍٰـہزًَلْٰ عٍِّيَٰـنٍٰكٍٰ عٍِّيَٰـﮧبٌِٰ🌚😹ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '😒' then
-moody = "• شَُبٌِٰيَٰـﮧكٍٰ كٍٰاَٰلْٰـﮧبٌِٰ خّٰلْٰقٍٰتّٰـﮧكٍٰ😟🐈ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '😳' then
-moody = "• هَٰہۧـاَٰ بٌِٰسٌٍ لْٰاَٰ شَُفِٰـﮧتّٰ عٍِّمٍٰتّٰـﮧكٍٰ اَٰلْٰعٍِّـﮧوٍّ໑بٌِٰهَٰہۧ😐😹ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '🙁' then
-moody = "• تّٰعٍِّـﮧاَٰلْٰ اَٰشَُكٍٰيَٰلْٰـﮧيَٰ هَٰہۧمٍٰوٍّمٍٰـﮧكٍٰ لْٰيَٰـشَُ • ضاَٰيَٰـﮧجًِّ🙁💔ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '🚶💔' then
-moody = "• تّٰعٍِّـﮧاَٰلْٰ اَٰشَُكٍٰيَٰلْٰـﮧيَٰ هَٰہۧمٍٰوٍّمٍٰـﮧكٍٰ لْٰيَٰـشَُ • ضاَٰيَٰـﮧجًِّ🙁💔ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '🙂' then
-moody = "• ثِْْكٍٰيَٰـﮧلْٰ نٍٰهَٰہۧنٍٰهَٰہۧنٍٰهَٰہۧنٍٰهَٰہۧ🐛ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '🌝' then
-moody = "• مٍٰنٍٰـﮧوٍّ໑رِٰ حٌٰبٌِٰـعٍِّمٍٰـہرِٰيَٰ😽💚ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'صباحو' then
-moody = "• صُِبٌِٰاَٰحٌٰـہكٍٰ عٍِّسٌٍـہلْٰ يَٰعٍِّسٌٍـﮧلْٰ😼🤞ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'صباح الخير' then
-moody = "• صُِبٌِٰاَٰحٌٰـہكٍٰ عٍِّسٌٍـہلْٰ يَٰعٍِّسٌٍـﮧلْٰ😼🤞ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'كفو' then
-moody = "• اَٰهَٰہۧ كٍٰفِٰـﮧوٍّ໑ يَٰبٌِٰہوٍّ୭ اَٰلْٰضـلْٰہوٍّ୭عٍِّ😹ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '😌' then
-moody = "• اَٰلْٰمٍٰطَُِلْٰـﮧوٍّ໑بٌِٰ !😕💞ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'اها' then
-moody = "• يَٰبٌِٰ قٍٰاَٰبٌِٰـﮧلْٰ اَٰغِِٰشَُـﮧكٍٰ شَُسٌٍاَٰلْٰفِٰـﮧهَٰہۧ حٌٰبٌِٰ😐🌝ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'شسمج' then
-moody = "• اَٰسٌٍـمٍٰهَٰہۧـﮧاَٰ جًِّعٍِّجًِّـﮧوٍّ໑عٍِّهَٰہۧ😹👊ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'شسمك' then
-moody = "• اَٰسٌٍمٍٰـﮧهَٰہۧ عٍِّبٌِٰـﮧوٍّ໑سٌٍيَٰ لْٰـوٍّ૭سٌٍہيَٰ😾😹💛ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'شوف' then
-moody = "• شَُشَُـﮧﮧوٍّ໑فِٰ 🌝🌝ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'مساء الخير' then
-moody = "• مٍٰسٌٍـﮧاَٰء اَٰلْٰحٌٰـﮧبٌِٰ يَٰحٌٰہبٌِٰحٌٰہبٌِٰ🌛🔥ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'المدرسه' then
-moody = "• لْٰتّٰجًِّيَٰـﮧبٌِٰ اَٰسٌٍمٍٰـﮧهَٰہۧ لْٰاَٰ اَٰطَُِـﮧرِٰدِٰكٍٰ🌞✨ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'منو ديحذف رسائلي' then
-moody = "• خّٰـﮧاَٰلْٰتّٰـہكٍٰ 🌚ֆ🌝"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'البوت واكف' then
-moody = "• لْٰجًِّـﮧذَْبٌِٰ حٌٰبٌِٰـہيَٰ 🌞⚡️ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'غلس' then
-moody = "• وٍّ໑كٍٰ بٌِٰـﮧسٌٍ سٌٍـﮧوٍّ୭لْٰفِٰلْٰيَٰ اَٰلْٰسٌٍـﮧاَٰلْٰفِٰهَٰہۧ بٌِٰعٍِّـﮧدِٰيَٰنٍٰ🌝🦅ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'حارة' then
-moody = "• تّٰسٌٍـہمٍٰطَُِ سٌٍمٍٰـﮧطَُِ غِِٰيَٰـﮧرِٰ يَٰرِٰحٌٰمٍٰنٍٰـﮧهَٰہۧ اَٰلْٰاَٰعٍِّبٌِٰـاَٰدِٰيَٰ وٍّيَٰنٍٰـہطَُِيَٰ عٍِّطَُِلْٰـﮧهَٰہۧ 😾💔ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'هههه' then
-moody = "• نٍٰشَُـﮧاَٰلْٰلْٰهَٰہۧ دِٰاَٰيَٰمٍٰـﮧهَٰہۧ💆🏻‍♂💘ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'ههههه' then
-moody = "• نٍٰشَُـﮧاَٰلْٰلْٰهَٰہۧ دِٰاَٰيَٰمٍٰـﮧهَٰہۧ💆🏻‍♂💘ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == '😹' then
-moody = "• نٍٰشَُـﮧاَٰلْٰلْٰهَٰہۧ دِٰاَٰيَٰمٍٰـﮧهَٰہۧ💆🏻‍♂💘ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'وين' then
-moody = "• بٌِٰـﮧﮧأرِٰض اَٰلْٰلْٰهَٰہۧ اَٰلْٰـہوٍّاَٰسٌٍعٍِّـﮧهَٰہۧ😽💜ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'كافي لغوة' then
-moody = "• كٍٰـيَٰفِٰنٍٰـﮧهَٰہۧ نٍٰتّٰـﮧهَٰہۧ شَُعٍِّـہلْٰيَٰكٍٰ😼👊ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'نايمين' then
-moody = "• اَٰنٍٰـﮧيَٰ سٌٍهَٰہۧـہرِٰاَٰنٍٰ اَٰحٌٰرِٰسٌٍـﮧكٍٰمٍٰ مٍٰـﮧטּ تّٰـرِٰاَٰمٍٰـﮧبٌِٰ😿😹🙌ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'اكو احد' then
-moody = "• يَٰ عٍِّيَٰـنٍٰـﮧيَٰ اَٰنٍٰـہيَٰ مٍٰـوٍّ૭جًِّـﮧوٍّدِٰ🌝✨ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'فديت' then
-moody = "•فِٰـﮧﮧدِٰاَٰكٍٰ/جًِّ ثِْْـﮧوٍّ୪لْٰاَٰنٍٰ اَٰلْٰكٍٰـرِٰوٍّ୭بٌِٰ😟😂💚ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'شكو' then
-moody = "• كٍٰلْٰـشَُـﮧﮧيَٰ مٍٰـہاَٰكٍٰـﮧوٍّ اَٰرِٰجًِّـعٍِّ نٍٰـاَٰمٍٰ🐼🌩ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'اوف' then
-moody = "• هَٰہۧـﮧﮧاَٰيَٰ اَٰوٍّفِٰ مٍٰنٍٰ يَٰـاَٰ نٍٰـوٍّ୭عٍِّ صُِـاَٰرِٰتّٰ اَٰلْٰـسٌٍاَٰلْٰفِٰهَٰہۧ مٍٰتّٰـنٍٰعٍِّرِٰفِٰ🌚🌙ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'احبج' then
-moody = "•جًِّـﮧذَْاَٰبٌِٰ يَٰـرِٰيَٰدِٰ يَٰطَُِـہكٍٰجًِّ😹🌞⚡️ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
-if text == 'انتة منو' then
-moody = "• اَٰنٍٰـﮧﮧيَٰ بٌِٰـوٍّ໑تّٰ💨🌝ֆ"
-send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
-end
+if text == 'كيناي' then 
+moody = "نَِٰہ؏ۤـہمٰ̲ہ تَہَٰف͒ہٰٰضۜہٰٰل “̯ 🐼💗 |℡" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'شلونكم' then 
+moody = " تـٰ̲ـہمـٰ̲ـہاٰمـٰ̲ـہ وٰاٰنـٰ̲ـہتـٰ̲ـہهـٰ̲ـہ ⚡️🌞 •|•℡" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'شلونك' then 
+moody = " ↡➰💛⋮™ ɑ᎗̈ɹ᎗̇ɹȊg ɑ⅃⅃Ȋ ↄᓄᓗ⅃Ȋ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'تمام' then 
+moody = " - دٰؤمـٰ̲ـہ يـٰ̲ـہاٰ رٰبـٰ̲ـہ ┋🎼🕊 ͢ۦٰ‏❥" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'هلاو' then 
+moody = "هٰہٰٖلہٰٖاٰوٰاٰتٰہٰٖ ᎒⁽ཻ🍁₎♚﴾ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '😐' then 
+moody = "صۛہٰٰآف͒ہٰٰنَِٰہ ؏ۤـہ خٰ̐ہآلتَہَٰڪٰྀہٰٰٖ 😹 ✫┋ ♛͢ ՞ ﴾" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'هاي' then 
+moody = "- هـٰ̲ـہاٰيـٰ̲ـہاٰتـٰ̲ـہ يـٰ̲ـہرٰوٰحـٰ̲ـہيـٰ̲ـہ ║♜💛⚡️͢₎⇣✿ ⁞" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'بوت' then 
+moody = "تٰہٰٖفٰہٰٖضٰہٰٖلہٰٖ حٰہٰٖيٰہٰٖاٰتٰہٰٖيٰہٰٖ ℡̮⇣┆👑😻⇣ۦ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'اريد اكبل' then 
+moody = " تَہَٰ؏ۤـہآل ڪٰྀہٰٰٖبّہل وِيِٰہٰ̲ھہ خٰ̐ہآلتَہَٰيِٰہ 😹 ✾♛💛¡⌯﴾❥" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'لتزحف' then 
+moody = " عٰہٰٖوٰفٰہٰٖهٰہٰٖ زٖاٰحٰہٰٖفٰہٰٖ عٰہٰٖلہٰٖهٰہٰٖ خٰہٰٖاٰلہٰٖتٰہٰٖكٰہٰٖ خٰہٰٖلہٰٖيٰہٰٖ يٰہٰٖسٰہٰٖتٰہٰٖفٰہٰٖاٰدٰ 😹 ⁞✦⁽☻🔥₎“ٰۦ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'كلخرا' then 
+moody = " خٰ̐ہرآ آليِٰہتَہَٰرسٰٰٓ حہٰٰلڪٰྀہٰٰٖڪٰྀہٰٰٖ يِٰہآ خٰ̐ہرآ 😹 💛🍃❁❀┇" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'زاحف' then 
+moody = "خٰ̐ہليِٰہ آلوِلد يِٰہسٰٰٓتَہَٰف͒ہٰٰآد 😹 ❥•َْ👻⚡️⸽۶ֆ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'دي' then 
+moody = " - اٰحٰـہٰٖبٰـہٰٖكٰـہٰٖ مٰـہٰٖوٰ بٰـہٰٖيٰـہٰٖدٰيٰـہٰٖ •🙊💙﴿ֆ ❥" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'فرخ' then 
+moody = "وٰيـٰ̲ـہنـٰ̲ـہهـٰ̲ـہ خـٰ̲ـہ اٰحـٰ̲ـہصـٰ̲ـہرٰهـٰ̲ـہ 😹 ┊ާ͢💜🔥₎⇣ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'تعالي خاص' then 
+moody = "ضٰہٰٖلہٰٖ زٖاٰحٰہٰٖفٰہٰٖ اٰمٰہٰٖدٰاٰكٰہٰٖ ֆ ⚡️🔱ۦ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'اكرهك' then 
+moody = "- قٰـہٰٖاٰبٰـہٰٖلـہٰٖ اٰنٰـہٰٖيٰـہٰٖ اٰطٰـہٰٖيٰـہٰٖقٰـہٰٖكٰـہٰٖ 😹 ┊⁞🐞🔐♩" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'احبك' then 
+moody = "حہٰٰبّہيِٰہبّہيِٰہ آنَِٰہيِٰہ ٰ̲ھہمٰ̲ہ • ⁽🙆🏻🍿₎ֆ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'باي' then 
+moody = " ﯝيہنٍ رٳيہحہ خہلہيہنٍه نٍضحہكُہ عہُلہيہكُہ 😹 ┋⁽❥̚͢₎ 🐣💗" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'واكف' then 
+moody = "- اٰبٰـہٰٖنٰـہٰٖ اٰلـہٰٖخٰـہٰٖرٰهٰـہٰٖ وٰيٰـہٰٖنٰـہٰٖ وٰاٰكٰـہٰٖفٰـہ😹ٰٖ ⁵⁶🗺🦅“♖ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'وين المدير' then 
+moody = "- طـٰ̲ـہاٰمـٰ̲ـہسـٰ̲ـہ بـٰ̲ـہلـٰ̲ـہ خـٰ̲ـہاٰصـٰ̲ـہ 😹 ֆ💬💖⸽ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'انجب' then 
+moody = " صِٰـﮧِۢآر آسِٰـﮧِۢتِٰـﮧِۢآديِٰـﮧِۢ ❥•َْ ͢🤦🏻‍💔♂⁞₎" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'تحبني' then 
+moody = " - مـٰ̲ـہاٰدٰرٰيـٰ̲ـہ اٰفـٰ̲ـہكـٰ̲ـہرٰ 😹 ℠⁽“ֆ🍃🌙ᴖ̈" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '🌚' then 
+moody = "فـٌٍ๋ۤ͜ﮧدٰيـِٰ̲ﮧتـٰۧﮧ صـٌٍ๋ۤ͜ﮧْخ̲ـꨩﮧཻامٰٰྀ̲ـِٰ̲ﮧْكـِّﮧْٰٖ ⁞❉💥┋♩  " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '🙄' then 
+moody = "- نـٰ̲ـہزٰلـٰ̲ـہ عـٰ̲ـہيـٰ̲ـہنـٰ̲ـہكـٰ̲ـہ عـٰ̲ـہيـٰ̲ـہبـٰ̲ـہ مـٰ̲ـہنـٰ̲ـہاٰ بـٰ̲ـہنـٰ̲ـہاٰتـٰ̲ـہ 😹  ﴿🔥🌸ֆ ❥͢  " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '😒' then 
+moody = "- شـٰ̲ـہبـٰ̲ـہيـٰ̲ـہكـٰ̲ـہ كـٰ̲ـہاٰلـٰ̲ـہبـٰ̲ـہ خـٰ̲ـہلـٰ̲ـہقـٰ̲ـہتـٰ̲ـہكـٰ̲ـہ ↲💜💬(⠀❥ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '😳' then 
+moody = " هٰـہٰٖاٰ بٰـہٰٖسٰـہٰٖ لـہٰٖاٰ شٰـہٰٖفٰـہٰٖتٰـہٰٖ عٰـہٰٖمٰـہٰٖتٰـہٰٖكٰـہٰٖ اٰلـہٰٖعٰـہٰٖوٰبٰـہٰٖهٰـہٰٖ 😹 ⇣✿💚💥 ⁞⌯﴾" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '🙁' then 
+moody = "تٰـہٰٖعٰـہٰٖاٰلـہٰٖ اٰشٰـہٰٖكٰـہٰٖيٰـہٰٖلـہٰٖيٰـہٰٖ هٰـہٰٖمٰـہٰٖوٰمٰـہٰٖكٰـہٰٖ لـہٰٖيٰـہٰٖشٰـہٰٖ ضٰـہٰٖاٰيٰـہٰٖجٰـہٰٖ 🖤🌞﴿ֆ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '🚶💔' then 
+moody = " تٰـہٰٖعٰـہٰٖاٰلـہٰٖ اٰشٰـہٰٖكٰـہٰٖيٰـہٰٖلـہٰٖيٰـہٰٖ هٰـہٰٖمٰـہٰٖوٰمٰـہٰٖكٰـہٰٖ لـہٰٖيٰـہٰٖشٰـہٰٖ ضٰـہٰٖاٰيٰـہٰٖجٰـہٰٖ 🖤🌞﴿ֆ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '🙂' then 
+moody = "صۛہٰٰآيِٰہر ثہٰٰڪٰྀہٰٰٖيِٰہل  ꪲꪳ♚⚡️ֆ⎝ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '🌝' then 
+moody = "❥┊⁽ ℡ 🌸🌞 ʟ̤ɾʅ᎗̣ɹᓄᓗ ȷg᎗̇ɹᓄ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'صباحو' then 
+moody = " صًٻًٳحہ ٳلہعہُسہلہ يہعہُسہلہ ₎⇣✿ ⁞😻🐼“" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'صباح الخير' then 
+moody = " صـٌٍ๋ۤ͜ﮧْب̲ꪰـﮧཻاح̲ꪳـﮧكـِّﮧْٰٖ عـ͜ާﮧْسـ̷ٰٰﮧْلٍُـّٰ̐ہ يـِٰ̲ﮧعـ͜ާﮧْسـ̷ٰٰﮧْلٍُـّٰ̐ہ ┆💙🙋🏼‍♂♕" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'كفو' then 
+moody = " - كٰـہٰٖفٰـہٰٖوٰ مٰـہٰٖنٰـہٰٖكٰـہٰٖ يٰـہٰٖبٰـہٰٖوٰ اٰلـہٰٖضٰـہٰٖلـہٰٖوٰعٰـہٰٖ 卍♚⁽🌞🔥“" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '😌' then 
+moody = " اٰلہٰٖمٰہٰٖطٰہٰٖلہٰٖوٰبٰہٰٖ 😕 ⁽♜🎸🤕﴾⁶⁹" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'اها' then 
+moody = "- يٰـہٰٖبٰـہٰٖ قٰـہٰٖاٰبٰـہٰٖلـہٰٖ اٰغٰـہٰٖشٰـہٰٖكٰـہٰٖ شٰـہٰٖنٰـہٰٖوٰ اٰلـہٰٖسٰـہٰٖاٰلـہٰٖفٰـہٰٖهٰـہٰٖ حٰـہٰٖبٰـہٰٖيٰـہٰٖ 😐 ┊♚⁞🌕♩ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'شسمج' then 
+moody = " - اٰسـٰ̲ـہمـٰ̲ـہهـٰ̲ـہ جـٰ̲ـہعـٰ̲ـہجـٰ̲ـہوٰعـٰ̲ـہهـٰ̲ـہ 😹 ↡➰💛⋮™" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'شسمك' then 
+moody = "- اٰسـٰ̲ـہمـٰ̲ـہهـٰ̲ـہ عـٰ̲ـہبـٰ̲ـہوٰسـٰ̲ـہيـٰ̲ـہ لـٰ̲ـہوٰسـٰ̲ـہيـٰ̲ـہ 😐😹 ℡̮⇣┆👑😻⇣ۦ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'شوف' then 
+moody = " ❥┇🔥🌝“ ᘓᓅg᎗ɹ̇̈ɹɹ᎗ɹ̇̈ɹɹ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'مساء الخير' then 
+moody = "- مـٰ̲ـہسـٰ̲ـہاٰء اٰلـٰ̲ـہحـٰ̲ـہبـٰ̲ـہ يـٰ̲ـہحـٰ̲ـہبـٰ̲ـہ ֆ 💭💔ۦٰ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'المدرسه' then 
+moody = " لہتہجہيہٻً ٳسہمْه لہٳٳطہردٍكُہ ⁽♜🎸🤕﴾⁶⁹" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'منو ديحذف رسائلي' then 
+moody = "خٰہٰٖاٰلہٰٖتٰہٰٖكٰہٰٖ •??💙﴿ֆ ❥ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'البوت واكف' then 
+moody = "لجْۧذِبّہ حہٰٰبّہ ❥┊⁽ ℡ 🌸🌞 " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'غلس' then 
+moody = " ﯝكُہ ٻًسہ سہﯝلہفُہلہيہ ٳلہسہٳلہفُہه ٻًعہُدٍيہنٍ ♩⁽😻🌸⁞♩" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'حارة' then 
+moody = " - تٰـہٰٖسٰـہٰٖمٰـہٰٖطٰـہٰٖ سٰـہٰٖمٰـہٰٖطٰـہٰٖ غٰـہٰٖيٰـہٰٖرٰ يٰـہٰٖرٰحٰـہٰٖمٰـہٰٖهٰـہٰٖ اٰلـہٰٖعٰـہٰٖبٰـہٰٖاٰدٰيٰـہٰٖ وٰيٰـہٰٖطٰـہٰٖيٰـہٰٖ عٰـہٰٖطٰـہٰٖلـہٰٖهٰـہٰٖ 😾 ֆ 💛💭ۦٰ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'هههه' then 
+moody = " ٳنٍشہٳء ٳلہلہه دٍٳيہمْه ✾😻🌸‘⌯﴾❥" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'ههههه' then 
+moody = " ٳنٍشہٳء ٳلہلہه دٍٳيہمْه ✾😻🌸‘⌯﴾❥" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == '😹' then 
+moody = " ٳنٍشہٳء ٳلہلہه دٍٳيہمْه ✾😻🌸‘⌯﴾❥" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'وين' then 
+moody = "بٰـہٰٖأرٰضٰـہٰٖ اٰلـہٰٖلـہٰٖهٰـہٰٖ اٰلـہٰٖوٰاٰسٰـہٰٖعٰـہٰٖهٰـہٰٖ ┋̈⁽ ❁🚶‍♂ 💥 ֆ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'كافي لغوة' then 
+moody = "ڪِٰـﮧِۢيِٰـﮧِۢفِٰ͒ـِﮧۢنِٰـﮧِۢۿۿہ آنِٰـﮧِۢتِٰـﮧِۢۿۿہ شِٰـﮧِۢعِٰـﮧِۢلِٰـِﮧۢيِٰـﮧِۢڪِٰـﮧِۢ ❥•َْ👻👊⸽۶ֆ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'نايمين' then 
+moody = "- اٰنٰـہٰٖيٰـہٰٖ سٰـہٰٖهٰـہٰٖرٰاٰنٰـہٰٖ اٰحٰـہٰٖرٰسٰـہٰٖكٰـہٰٖمٰـہٰٖ مٰـہٰٖنٰـہٰٖ تٰـہٰٖرٰاٰمٰـہٰٖبٰـہٰٖ 😹 ۦ˛⁽😻💗₎⇣ " 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'اكو احد' then 
+moody = " يٰہٰٖ عٰہٰٖيٰہٰٖنٰہٰٖيٰہٰٖ اٰنٰہٰٖيٰہٰٖ مٰہٰٖوٰجٰہٰٖوٰدٰ 🌝 💥۶ֆᵛ͢ᵎᵖ ⌯﴾❥" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'فديت' then 
+moody = "فٰـہٰٖدٰاٰكٰـہٰٖ/جٰـہٰٖ ثٰـہٰٖوٰلـہٰٖاٰنٰـہٰٖ اٰلـہٰٖكٰـہٰٖرٰوٰبٰـہٰٖ 😹 ⸽❥•َْ🌛🔥 ۶ֆ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'شكو' then 
+moody = " كٰہٰٖلہٰٖشٰہٰٖيٰہٰٖ مٰہٰٖاٰكٰہٰٖوٰ اٰرٰجٰہٰٖعٰہٰٖ نٰہٰٖاٰمٰہٰٖ ⸽❥•َْ🌛🔥 ۶ֆ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'اوف' then 
+moody = " هٳيہ ٳﯝفُہ مْنٍ يہٳ نٍﯝعہُ صًٳرتہ ٳلہسہٳلہفُہه مْٳتہنٍعہُرفُہ 🌝 ║♜💛⚡️₎⇣✿ ⁞" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'احبج' then 
+moody = " - جـٰ̲ـہذٰاٰبـٰ̲ـہ يـٰ̲ـہرٰيـٰ̲ـہدٰ يـٰ̲ـہطـٰ̲ـہكـٰ̲ـہجـٰ̲ـہ 😹  ٰ☬✨🛡⇝﴾”" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
+if text == 'انتة منو' then 
+moody = " ٰ☬✨🛡⇝﴾” 🌝 ᎗̈ɹg᎗̣ɹ ᎗̤ɹ᎗̇ɹȊ" 
+send(msg.chat_id_, msg.id_, 1, moody, 1, 'md') 
+end 
 end
 
 if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
