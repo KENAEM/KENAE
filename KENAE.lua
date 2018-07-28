@@ -3228,7 +3228,116 @@ end
     send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
   end
   -----------------------------------------------
-
+if (text and text == 'قفل الفشار' and is_mod(msg)) then 
+send(msg.chat_id_, msg.id_, 1,"☑️┇تم قفل الفشار", 1, 'html')
+database:set("keko:bantext"..bot_id..msg.chat_id_,"keko")
+end
+if (text and text == 'فتح الفشار' and is_mod(msg)) then
+send(msg.chat_id_, msg.id_, 1,"☑️┇تم فتح الفشار",1, 'html')
+database:del("keko:bantext"..bot_id..msg.chat_id_)
+end
+local ikeko = database:get("keko:bantext"..bot_id..msg.chat_id_)
+if (ikeko and ikeko == 'keko') then
+if (not is_mod(msg) and text) then 
+local keko = { -- the List By : KENAETEAM
+        'عير',
+        'كس',
+        'كحبه', -- the List By : KENAETEAM
+        'كساسه',
+        'مناويج',
+        'تنيجون',
+        'سكسي',
+        'xxnx',
+        'XXNX',
+        'xxxn',
+        'XXXN',
+        'كوسي',
+        'عيري',
+        'موجب',
+        'سالب',
+        'بلاع العير',
+        'بلاع الكس',
+        'مصاص الخصوه',
+        'ابن الكس',
+        'ابن العار',
+        'ابن العاهره',
+        'عاهره',
+        'منيوج',
+        'فرخ',
+        'فروخ',
+        'بلاع',
+        'كواد',
+        'كواده',
+        'منيوجه',
+        'سكس',
+        'نجتهم',
+        'بعصته',
+        'بعصتهم',
+        'ناجني',
+        'نجته', -- the List By : KENAETEAM
+        'بعصني',
+        'عيري',
+        'عيرك',
+        'كسك',
+        'fuck',
+        'FUCK',
+        'sexy',
+        'SEXY',
+        'نيج',
+        'ناجونه',
+        'نجناهم',
+        'بعصناهم',
+        'خصاوي',
+        'عيوره',
+        'كساسه',
+        'طيزك',
+        'طيزي',
+        'كيري كن امك',
+        'كيرى',
+        'كيرى كن امك',
+        'تنيج',
+        'ناجوك',
+        'بی ناموس',
+        'کسکش',
+        'كير خوار',
+        'كسليس',
+        'ننه گوزو',
+        'ننه كسكش',
+        'بی پدر',
+        'پدر کونی',
+        'كسننه',
+        'جنده',
+        'مادره جنده',
+        'بي ناموس',
+        'بي شرف',
+        'كسننت',
+        'بي پدر ومادر',
+        'خواهر جنده',
+        'ننه كونى',
+        'پسر کونی',
+        'کیرم تو مادرت',
+        'کیرم تو خانوادت',-- the List By : KENAETEAM
+        'پدر سگ',
+        'پدر کونی',
+        'خواهرت گاییدم',
+        'مادرت گاییدم'
+} -- the List By : KENAETEAM
+function delete_msg(chatid,mid)
+    tdcli_function ({
+    ID="DeleteMessages",
+    chat_id_=chatid,
+    message_ids_=mid
+    },
+    dl_cb, nil)
+end
+for i,v in ipairs(keko) do
+if text:match("^()("..v..")(.*)$") then 
+delete_msg(msg.chat_id_,{[0] = msg.id_})
+end
+end
+end
+end
+end
 
     if text:match("^الاعضاء المميزين") and is_owner(msg) then
   local hash =   'KENAE:'..bot_id..'vipgp:'..msg.chat_id_
