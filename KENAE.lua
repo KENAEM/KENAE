@@ -491,7 +491,6 @@ function delete_msg(chatid,mid)
   ID="DeleteMessages",
   chat_id_=chatid,
   message_ids_=mid
-  },
   dl_cb, nil)
 end
 --         »»                 chat_del_user                         ««              --
