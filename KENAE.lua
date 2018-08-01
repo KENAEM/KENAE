@@ -485,13 +485,13 @@ ID = "UnpinChannelMessage",
 channel_id_ = getChatId(channel_id).ID
   }, dl_cb, nil)
 end
---         »»                 delete_msg                         ««              --
-function delete_msg(chatid,mid)
-  tdcli_function ({
-  ID="DeleteMessages",
-  chat_id_=chatid,
-  message_ids_=mid
-  dl_cb, nil)
+--         »»                 changetitle                         ««              --
+function changetitle(chat_id, title)
+tdcli_function ({
+ID = "ChangeChatTitle",
+chat_id_ = chat_id,
+title_ = title
+}, dl_cb, nil)
 end
 --         »»                 chat_del_user                         ««              --
 function chat_del_user(chat_id, user_id)
