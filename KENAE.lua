@@ -5588,9 +5588,9 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
      end
   if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
   local text = [[
- 📮┇اهلا بك في سورس كيناي                     
+📮┇اهلا بك في سورس كيناي                     
 🔹➖🔸➖🔹➖➖🔹➖🔸
-`git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh`
+git clone https://github.com/KENAEM/KENAE && cd KENAE && chmod +x install.sh && ./install.sh
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 ✅┇طريقة التنصيب،☢️
 🔹➖🔸➖🔹➖➖🔹➖🔸
@@ -5600,22 +5600,22 @@ if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
 » تدخل مـعلومـآتگ مـن توگن وآيدي
 » ثم آنتر سـوف يعمـل آلبوت بسـگرين تلقآئيآ ...                                                   
 🔹➖🔸➖🔹➖➖🔹➖🔸     
-♻️┇كود الرن ~⪼ `./KENAE/ts`
-⚠️┇ كود الحذف ~⪼ `rm -rf *KENAE`
+♻️┇كود الرن ~⪼ ./KENAE/ts
+⚠️┇ كود الحذف ~⪼ rm -rf *KENAE
 🔹➖🔸➖🔹➖➖🔹➖🔸 
- 🦁┇[قناةالسورس ](t.me/KENAETEAM)              
-📮┇[شروحات السورس](t.me/KENAE_TEAM)
+ 🦁┇قناةالسورس  (http://t.me/KENAETEAM)              
+📮┇شروحات السورس (http://t.me/KENAE_TEAM)
 🔹➖🔸➖🔹➖➖🔹➖🔸
 ]] 
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
-  end
+ end
 
-  if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
-  local text =  [[
-  🗑┇رابط حذف التلي ، ⬇
-  ‼┇احذف ولا ترجع عيش حياتك'
-  🔵➖🔵➖🔴➖🔴➖🔵➖🔵
-  🔎┇<a href="https://telegram.org/deactivate">اضغط هنا للحذف الحساب" </a>
+ if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
+ local text =  [[
+ 🗑┇رابط حذف التلي ، ⬇
+ ‼┇احذف ولا ترجع عيش حياتك'
+ 🔵➖🔵➖🔴➖🔴➖🔵➖🔵
+ 🔎┇<a href="https://telegram.org/deactivate">اضغط هنا للحذف الحساب" </a>
   ]]
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
