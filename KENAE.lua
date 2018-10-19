@@ -1633,7 +1633,7 @@ for i=1, #gpss do
 local link = database:get('KENAE:'..bot_id.."group:link"..gpss[i])
 text = text.."|"..i.."| ~⪼ "..gpss[i].."\n ~⪼ "..(link or  "لا يوجد رابط").."\n"
 end
- local f = io.open('KENAE.txt', 'w')
+  local f = io.open('KENAE.txt', 'w')
  f:write(text)
  f:close()
  local KENAEe = 'https://api.telegram.org/bot' .. token .. '/sendDocument'
@@ -1641,15 +1641,14 @@ end
  io.popen(curl)
  end
 if text:match("^تحديث$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
-send(msg.chat_id_, msg.id_, 1, '☑┊تم التحديث', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
 os.execute('cd libs && wget https://raw.githubusercontent.com/KENAEM/KENAE/master/libs/utils.lua')
 os.execute('rm -rf KENAE.lua')
 os.execute('wget https://raw.githubusercontent.com/KENAEM/KENAE/master/KENAE.lua')
 os.exit()
 return false
-end
-if text:match("^وضع وقت (%d+)$") then
+end 
 local a = {string.match(text, "^(وضع وقت) (%d+)$")}
 local time = a[2] * day
 database:setex( 'KENAE:'..bot_id.."charge:"..msg.chat_id_,time,true)
