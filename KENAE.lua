@@ -4774,15 +4774,22 @@ moody = "بٖۘۅْټْ ٵۧنْٖۧۑٖۧ حَۧٵۧڕسْ๋ٖڪْ๋ٖ͜ ،�
 send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
 end
 end
-
 if  (text and text == 'تفعيل ردود البوت') and is_owner(msg) then
     if not database:get('KENAE :'..bot_id..'rep:mute'..msg.chat_id_) then
-  send(msg.chat_id_, msg.id_, 1, '☑┊ردود البوت بالتأكيد تم تفعيلها', 1, 'md')
+  send(msg.chat_id_, msg.id_, 1, '☑️┊ردود البوت بالتأكيد تم تفعيلها', 1, 'md')
     else
-  send(msg.chat_id_, msg.id_, 1, '☑┊تم تفعيل ردود البوت', 1, 'md')
+  send(msg.chat_id_, msg.id_, 1, '☑️┊تم تفعيل ردود البوت', 1, 'md')
    database:del('KENAE :'..bot_id..'rep:mute'..msg.chat_id_)
   end
   end
+  if(text and text == 'تعطيل ردود البوت') and is_owner(msg) then
+    if database:get('KENAE :'..bot_id..'rep:mute'..msg.chat_id_) then
+  send(msg.chat_id_, msg.id_, 1, '☑️┊ردود البوت بالتأكيد تم تعطيلها', 1, 'md')
+  else
+  send(msg.chat_id_, msg.id_, 1, '☑️┊تم تعطيل ردود البوت', 1, 'md')
+    database:set('KENAE :'..bot_id..'rep:mute'..msg.chat_id_,true)
+  end
+    end
 
  if text:match("^ردود المطور$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add)  then
     local list = redis:smembers('KENAE:'..bot_id..'kaliresudo')
