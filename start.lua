@@ -1,15 +1,15 @@
 sudo_KENAE = dofile("sudo.lua")
 https = require("ssl.https")
 JSON = dofile("./libs/JSON.lua")
-local MAX_dev = io.open("KENAE_online.lua")
+local KENAE_dev = io.open("KENAE_online.lua")
 if KENAE_dev then
 KENAE_on = {string.match(KENAE_dev:read('*all'), "^(.*)/(%d+)")}
-local MAX_file = io.open("sudo.lua", 'w')
+local KENAE_file = io.open("sudo.lua", 'w')
 KENAE_file:write("token = '" ..KENAE_on[1].."'\n\nsudo_add = "..KENAE_on[2].."" )
 KENAE_file:close()
 https.request("https://api.telegram.org/bot"..KENAE_on[1].."/sendMessage?chat_id="..KENAE_on[2].."&text=Bot_KENAE_is_start_new")
 os.execute('cd .. && rm -rf .telegram-cli')
-os.execute('rm -rf MAX_online.lua')  
+os.execute('rm -rf KENAE_online.lua')  
 os.execute('./tg -s ./KENAE.lua $@ --bot='..KENAE_on[1])
 end
 function chack(tokenCk)
