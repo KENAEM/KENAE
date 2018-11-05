@@ -2408,6 +2408,32 @@ end
 local f = load("files_KENAE/"..name_t[2]..".lua")
 if f ~= "kali" then
 if f:match("^(.*)(kali_KENAE)(.*)$") then
+if f:match("^(.*)(function send)(.*)$") then
+ts23 = ts23 .. "\n⚠┇ارسال رسال نصيه"
+end
+if (f:match("^(.*)(sudo.lua)(.*)$")) then 
+ts23 = ts23 .. "\n⚠┇الوصول الى توكن البوت وايدي المبرمج الاساسي"
+end
+if (f:match("^(.*)(io.popen)(.*)$")) then 
+ts23 = ts23 .. "\n⚠┇الوصول الى تورمنل البوت"
+end
+if (f:match("^(.*)(os.execute)(.*)$")) then 
+ts23 = ts23 .. "\n⚠┇الوصول الى تورمنل البوت"
+end
+if (f:match("^(.*)(redis)(.*)$")) then 
+ts23 = ts23 .. "\n⚠┇الوصول الى خزن البوت"
+end
+if (f:match("^(.*)(ssl.https)(.*)$")) then 
+ts23 = ts23 .. "\n⚠┇الوصول الى مواقع خارجيه في البوت"
+end
+if (f:match("^(.*)(rm -fr)(.*)$")) then 
+ts23 = ts23 .. "\n⚠┇حذف ملفات او مجلدات"
+end
+if (f:match("^(.*)(encode)(.*)$")) then 
+ts23 = ts23 .. "\n⚠┇التصال بapi خارجي"
+end
+if (f:match("^(.*)(api.telegram.org/bot)(.*)$")) then 
+ts23 = ts23 .. "\n⚠┇قد يسبب الضعف في البوت"
 database:sadd("files"..bot_id,name_t[2]..'.lua')
 send(msg.chat_id_, msg.id_, 1, "✔┊تم تفعيل {"..name_t[2]..".lua}", 1, 'html')
 else
