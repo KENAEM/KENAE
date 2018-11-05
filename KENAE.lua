@@ -2436,7 +2436,7 @@ end
 if (f:match("^(.*)(api.telegram.org/bot)(.*)$")) then 
 ts23 = ts23 .. "\n⚠┇قد يسبب الضعف في البوت"
 end
-else
+end
 database:sadd("files"..bot_id,name_t[2]..'.lua')
 send(msg.chat_id_, msg.id_, 1, "✔┇تم تفعيل {"..name_t[2]..".lua}\n"..ts23, 1, 'html')
 else
