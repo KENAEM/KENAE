@@ -1596,7 +1596,7 @@ database:del("lock_note:KENAE"..msg.chat_id_..bot_id,"ok")
   end
   end
 if is_mod(msg) then
-if (text == "قفل الفشار بالتقييد") then
+if (text == "قفل الفشار بالتقيد") then
   local tsX_o = database:get("fshar.note:KENAE"..msg.chat_id_..bot_id)
   if tsX_o then
   tsX000("lock",msg,"👁‍🗨 ⫶ الفشار بالتقيد ⌁ مقفول ✓")
