@@ -841,6 +841,12 @@ database:sadd('KENAE:'..bot_id..'res:'..msg.chat_id_, msg.sender_user_id_)
 end
 end
 if text == "فرخ" or text == "منيوج" or text == "كواد" or text == "ساقط" or text == "صرم" or text == "طيز" or text == "كسختك" or text == "كس خواتكم" or text == "ابن الكحبه" or text =="كلكم فروخ" then 
+if database:get("fshar:KENAE"..msg.chat_id_..bot_id) then
+delete_msg(msg.chat_id_,{[0] = msg.id_})
+send(msg.chat_id_, msg.id_, 1, '🚦⁞ ممنوع الفشار هنا   •', 1, 'md')
+end
+end
+if text == "فرخ" or text == "منيوج" or text == "كواد" or text == "ساقط" or text == "صرم" or text == "طيز" or text == "كسختك" or text == "كس خواتكم" or text == "ابن الكحبه" or text =="كلكم فروخ" then 
 if database:get("fshar.note:KENAE"..msg.chat_id_..bot_id) then
 delete_msg(msg.chat_id_,{[0] = msg.id_})
   database:sadd('KENAE:'..bot_id..'res:'..msg.chat_id_, msg.sender_user_id_)
@@ -1614,7 +1620,7 @@ database:del("lock_note:KENAE"..msg.chat_id_..bot_id,"ok")
   end
   end
 if is_mod(msg) then
-if (text == "قفل الفشار بالتقييد") then
+if (text == "قفل الفشار بالتقيد") then
   local tsX_o = database:get("fshar.note:KENAE"..msg.chat_id_..bot_id)
   if tsX_o then
   tsX000("lock",msg,"👁‍🗨 ⫶ الفشار بالتقيد ⌁ مقفول ✓")
@@ -2008,12 +2014,6 @@ end
 if text and text:match("(.*)(@)(.*)")  then
 if database:get("lock_username:KENAE"..msg.chat_id_..bot_id) then
 delete_msg(msg.chat_id_,{[0] = msg.id_})
-end
-end
-if text == "فرخ" or text == "منيوج" or text == "كواد" or text == "ساقط" or text == "صرم" or text == "طيز" or text == "كسختك" or text == "كس خواتكم" or text == "ابن الكحبه" or text =="كلكم فروخ" then 
-if database:get("fshar:KENAE"..msg.chat_id_..bot_id) then
-delete_msg(msg.chat_id_,{[0] = msg.id_})
-send(msg.chat_id_, msg.id_, 1, '🚦⁞ ممنوع الفشار هنا   •', 1, 'md')
 end
 end
 if database:get("lock_chat:KENAE"..msg.chat_id_..bot_id) then
