@@ -5846,17 +5846,6 @@ end
 ]]
  send(msg.chat_id_, msg.id_, 1, text, 1, 'id')
   end
-  
-  if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
-  local text =  [[
-  🗑┊رابط حذف التلي ، ⬇
-  ‼┊احذف ولا ترجع عيش حياتك'
-  ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
-  🔎┊<a href="https://telegram.org/deactivate">اضغط هنا للحذف الحساب" </a>
-  ]]
-  send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
-  end
-
   if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
   local text =  [[
   🗑┇رابط حذف التلي ، ⬇
@@ -5868,10 +5857,8 @@ send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
 end
 end
-
 function tdcli_update_callback(data)
 local chat = {}
-
 if (data.ID == "UpdateNewMessage") then
 local msg = data.message_
 local Data_KENAE = data
