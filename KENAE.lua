@@ -5597,7 +5597,7 @@ database:set('KENAE:'..bot_id..'l:ids'..msg.chat_id_,true)
 end 
 
 
-if text == 'الاسرع' and database:get('KENAE:'..bot_id..'lock_geam'..msg.chat_id_) then
+if text == 'اسرع' and database:get('KENAE:'..bot_id..'lock_geam'..msg.chat_id_) then
 database:del('KENAE:'..bot_id..'l:id'..msg.chat_id_)
 katu = {'سحور','سياره','استقبال','قنفه','ايفون','بزونه','مطبخ','كرستيانو','دجاجه','مدرسه','الوان','غرفه','ثلاجه','كهوه','سفينه','العراق','محطه','طياره','رادار','منزل','مستشفى','كهرباء','تفاحه','اخطبوط','سلمون','فرنسا','برتقاله','تفاح','مطرقه','بتيته','لهانه','شباك','باص','سمكه','ذباب','تلفاز','حاسوب','انترنيت','ساحه','جسر'};
 name = katu[math.random(#katu)]
