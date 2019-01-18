@@ -6089,7 +6089,7 @@ end
   local text =  [[
   🗑┇رابط حذف التلي ، ⬇
   ‼┇احذف ولا ترجع عيش حياتك'
-  ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
+  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
   🔎┇<a href="https://telegram.org/deactivate">اضغط هنا للحذف الحساب" </a>
   ]]
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
